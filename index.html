@@ -1,48 +1,785 @@
 <!DOCTYPE html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Jiu-Jitsu para Mulheres: Primeiros Passos</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap">
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Curso livre e gratuito de jiu-jitsu para mulheres iniciantes: origem, preparação, fundamentos, defesa pessoal e confiança.">
+<title>Jiu-Jitsu para Mulheres: Primeiros Passos</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600;700&display=swap">
 <style>
-:root{--bg:#f5f6fb;--surface:#fff;--ink:#1b2150;--text:#2b2f45;--muted:#5d6280;--line:#d9dcec;--accent:#c92a6b;--b1:#cfd3e6;--b2:#1f5fd6;--b3:#6a3fa3;--b4:#6b4326;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10132b;--surface:#181c3d;--ink:#eef0ff;--text:#d7daf0;--muted:#a3a8cb;--line:#2c3260;--accent:#ff6aa2;--b1:#e8eaf6;--b2:#5b92ff;--b3:#a37be0;--b4:#b07a4c;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#10132b;--surface:#181c3d;--ink:#eef0ff;--text:#d7daf0;--muted:#a3a8cb;--line:#2c3260;--accent:#ff6aa2;--b1:#e8eaf6;--b2:#5b92ff;--b3:#a37be0;--b4:#b07a4c;color-scheme:dark}
-html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 62px)}*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font:18px/1.65 "Source Sans 3",system-ui,sans-serif}
-h1,h2,h3{font-family:"Bricolage Grotesque","Source Sans 3",system-ui,sans-serif;color:var(--ink);line-height:1.15;margin:0 0 .6em}
-h1{font-size:clamp(2.1rem,6vw,3.4rem);font-weight:800}h2{font-size:clamp(1.5rem,4.2vw,2.1rem);font-weight:800;display:flex;gap:12px;align-items:center}h3{font-size:1.2rem;font-weight:600;margin-top:1.6em}
+:root{--bg:#f6f4fa;--surface:#ffffff;--ink:#1c1946;--text:#2c2a48;--muted:#615f80;--line:#e2dfee;--accent:#b8286a;--accent-soft:#fbe9f1;--accent-ink:#ffffff;--tip-bg:#eef1ff;--tip-bd:#8fa2f0;--warn-bg:#fff5da;--warn-bd:#e2b43c;--warn-tx:#5f4300;--b1:#cfd3e6;--b2:#1f5fd6;--b3:#6a3fa3;--b4:#6b4326;--on1:#1c1946;--onx:#ffffff;--shadow:0 1px 2px rgba(28,25,70,.06),0 10px 28px rgba(28,25,70,.07);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1230;--surface:#171a3b;--ink:#eef0ff;--text:#d6d9f0;--muted:#a2a7ca;--line:#2b3160;--accent:#ff7fb0;--accent-soft:#2c1a36;--accent-ink:#1a0a14;--tip-bg:#1b2150;--tip-bd:#4a5bb8;--warn-bg:#352a0d;--warn-bd:#9a7620;--warn-tx:#ffe39a;--b1:#e8eaf6;--b2:#5b92ff;--b3:#a37be0;--b4:#b07a4c;--on1:#10132b;--onx:#10132b;--shadow:none;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1230;--surface:#171a3b;--ink:#eef0ff;--text:#d6d9f0;--muted:#a2a7ca;--line:#2b3160;--accent:#ff7fb0;--accent-soft:#2c1a36;--accent-ink:#1a0a14;--tip-bg:#1b2150;--tip-bd:#4a5bb8;--warn-bg:#352a0d;--warn-bd:#9a7620;--warn-tx:#ffe39a;--b1:#e8eaf6;--b2:#5b92ff;--b3:#a37be0;--b4:#b07a4c;--on1:#10132b;--onx:#10132b;--shadow:none;color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--text);font:18px/1.7 "Source Sans 3",system-ui,sans-serif;padding-bottom:env(safe-area-inset-bottom,0px);-webkit-text-size-adjust:100%}
+img{max-width:100%;display:block}
+h1,h2,h3,h4{font-family:"Bricolage Grotesque","Source Sans 3",system-ui,sans-serif;color:var(--ink);line-height:1.15;margin:0 0 .6em}
+h1{font-size:clamp(2.3rem,7vw,3.7rem);font-weight:800;max-width:15ch}
+h1 span{display:block;color:var(--accent)}
+h2{font-size:clamp(1.6rem,4.5vw,2.2rem);font-weight:800}
+h3{font-size:1.35rem;font-weight:800;margin-top:2em}
+h4{font-size:1.05rem;font-weight:800}
+p{margin:.7em 0}
 a{color:var(--accent)}
-nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5;overflow-x:auto;white-space:nowrap;text-align:center}
-nav a{display:inline-block;padding:14px 14px;color:var(--ink);text-decoration:none;font-weight:600;font-size:.95rem;border-bottom:3px solid transparent}
-nav a[aria-current]{border-bottom-color:var(--accent)}
-nav a:focus-visible,.btn:focus-visible,.card:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:-3px}
-.wrap{max-width:760px;margin:0 auto;padding:0 20px}
-header.hero{padding:44px 0 32px}.hero p{font-size:1.15rem}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin-top:24px}
-.card{display:block;background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--bc);border-radius:10px;padding:12px 14px;color:var(--text);text-decoration:none;line-height:1.3}
-.card b{display:block;color:var(--ink)}.card span{font-size:.95rem}.card:hover{border-color:var(--accent)}
-section{padding:44px 0;border-top:1px solid var(--line)}
-.unit{border-left:10px solid var(--bc);padding-left:20px;margin-left:-30px}
-@media (max-width:760px){.unit{margin-left:0;padding-left:14px;border-left-width:8px}}
-.num{flex:none;width:2.2rem;height:2.2rem;border-radius:50%;background:var(--bc);color:var(--bg);display:grid;place-items:center;font-size:1.1rem}
-.goal{background:var(--surface);border:1px solid var(--line);padding:14px 16px;border-radius:8px}
-table{border-collapse:collapse;width:100%;background:var(--surface);font-size:.98rem}th,td{border:1px solid var(--line);padding:10px;text-align:left;vertical-align:top}.scroll{overflow-x:auto}
-.ex{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:8px;padding:10px 16px;margin:20px 0}.ex p{margin:.3em 0}.ex b{color:var(--ink)}
-ol.q{padding-left:1.3em}ol.q li{margin:.8em 0}
-details{margin-top:4px}summary{cursor:pointer;color:var(--accent);font-weight:600;font-size:.95rem}details p{margin:.4em 0;padding:8px 12px;background:var(--surface);border-radius:6px;border:1px solid var(--line)}
-svg{width:100%;height:auto;display:block}.fig{margin:20px 0}.fig svg{max-width:560px;margin:0 auto}.fig figcaption{text-align:center;color:var(--muted);font-size:.95rem;margin-top:6px}
-.btn{display:inline-block;margin:6px 8px 6px 0;padding:10px 16px;border:2px solid var(--accent);border-radius:999px;color:var(--ink);text-decoration:none;font-weight:600}.btn:hover{background:var(--accent);color:var(--bg)}
-.ph img{width:100%;height:auto;display:block;border-radius:12px;border:1px solid var(--line)}.ph .alt{display:none}.ph.nophoto .alt{display:block}.ph.nophoto .g{display:none}.ph.nophoto img{display:none}.gal .g{display:grid;gap:8px;grid-template-columns:repeat(3,1fr)}@media (max-width:640px){.gal .g{grid-template-columns:1fr}}.fig .belts svg{max-width:460px}.fig:has(img){margin:22px 0}.note{color:var(--muted);font-size:.95rem}footer{padding:36px 0 56px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style></head><body>
-<nav aria-label="Seções"><a href="#inicio">Início</a><a href="#unidade-1">1 O que é</a><a href="#unidade-2">2 Preparação</a><a href="#unidade-3">3 Fundamentos</a><a href="#unidade-4">4 Defesa</a><a href="#atividades">Atividades</a><a href="#infografico">Infográfico</a><a href="#videos">Vídeos</a><a href="#referencias">Referências</a></nav>
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--accent);color:var(--accent-ink);padding:10px 16px;border-radius:8px;z-index:20}
+.skip:focus{left:12px}
+
+/* topo e menu */
+.top{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.bar{max-width:1040px;margin:0 auto;padding:8px 16px;display:flex;align-items:center;gap:14px}
+.brand{font:800 1.05rem "Bricolage Grotesque",system-ui,sans-serif;color:var(--ink);text-decoration:none;white-space:nowrap}
+.brand b{color:var(--accent)}
+.top nav{flex:1;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;padding:2px}
+.top nav::-webkit-scrollbar{display:none}
+.top nav a{padding:8px 13px;border-radius:999px;color:var(--ink);text-decoration:none;font-weight:600;font-size:.93rem;white-space:nowrap}
+.top nav a:hover{background:var(--accent-soft)}
+.top nav a.on{background:var(--accent);color:var(--accent-ink)}
+.progress{height:3px;background:var(--line)}
+.progress i{display:block;height:100%;width:0;background:var(--accent)}
+@media (max-width:720px){.bar{flex-direction:column;align-items:stretch;gap:2px;padding-top:6px}.brand{font-size:.98rem}}
+
+.wrap{max-width:820px;margin:0 auto;padding:0 18px}
+
+/* hero */
+.hero{padding:44px 0 20px}
+.eyebrow{font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.82rem;color:var(--accent);margin:0 0 12px}
+.lead{font-size:1.18rem;max-width:36em}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0}
+.btn{display:inline-block;padding:11px 20px;border:2px solid var(--accent);border-radius:999px;color:var(--ink);background:transparent;text-decoration:none;font-weight:700;font-size:1rem}
+.btn:hover{background:var(--accent-soft)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.primary:hover{filter:brightness(1.08)}
+.belts{display:flex;height:12px;margin:26px 0 0;border-radius:6px;overflow:hidden;max-width:360px;border:1px solid var(--line)}
+.belts i{flex:1}
+.facts{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;margin:22px 0 0}
+.facts li{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:7px 16px;font-size:.98rem}
+.facts b{color:var(--accent);font-family:"Bricolage Grotesque",system-ui,sans-serif;font-size:1.15rem;margin-right:4px}
+
+/* fotos */
+.photo{margin:22px 0}
+.photo img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:16px;background:var(--line);box-shadow:var(--shadow)}
+.photo figcaption{font-size:.93rem;color:var(--muted);margin-top:8px}
+.photo.missing{display:none}
+
+/* roteiro */
+section.block{padding:34px 0 8px}
+.map{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:18px 0}
+.card{display:block;background:var(--surface);border:1px solid var(--line);border-top:7px solid var(--bc);border-radius:14px;padding:16px 18px;text-decoration:none;color:var(--text);box-shadow:var(--shadow);transition:transform .15s}
+.card:hover{transform:translateY(-3px)}
+.card h3{margin:8px 0 6px;font-size:1.15rem}
+.card p{margin:0;font-size:.97rem;color:var(--muted)}
+.study{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 22px;margin:18px 0}
+.study h3{margin-top:0;font-size:1.15rem}
+.study ol{margin:0;padding-left:1.2em}
+.study li{margin:.3em 0}
+
+/* unidades */
+.u1{--bc:var(--b1);--on:var(--on1)}
+.u2{--bc:var(--b2);--on:var(--onx)}
+.u3{--bc:var(--b3);--on:var(--onx)}
+.u4{--bc:var(--b4);--on:var(--onx)}
+.badge{width:46px;height:46px;border-radius:13px;background:var(--bc);color:var(--on);display:grid;place-items:center;font:800 1.5rem "Bricolage Grotesque",system-ui,sans-serif;flex:none;border:1px solid var(--line)}
+.unit{background:var(--surface);border:1px solid var(--line);border-top:9px solid var(--bc);border-radius:20px;padding:30px 26px 26px;margin:44px 0;box-shadow:var(--shadow)}
+@media (max-width:560px){.unit{padding:24px 16px 20px;border-radius:16px}}
+.unit-head{display:flex;gap:14px;align-items:center;margin-bottom:10px}
+.unit-head h2{margin:0}
+.kicker{margin:0 0 2px;font-weight:700;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.goal{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:14px 18px}
+.mini{border:1px dashed var(--line);border-radius:12px;padding:12px 18px;margin:16px 0;font-size:.98rem}
+.mini ol{margin:6px 0 0;padding-left:1.3em;columns:2;column-gap:28px}
+@media (max-width:560px){.mini ol{columns:1}}
+.mini a{color:var(--ink)}
+.num{color:var(--muted);margin-right:.4em;font-weight:600}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin:18px 0}
+.cards>div{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:16px}
+.cards h4{margin:0 0 6px}
+.cards p{margin:0;font-size:.98rem}
+
+.callout{border-left:5px solid var(--cb);background:var(--cbg);border-radius:10px;padding:14px 18px;margin:22px 0}
+.callout p{margin:.4em 0}
+.callout ul,.callout ol{margin:.4em 0;padding-left:1.2em}
+.ct{margin:0 0 4px!important;font:700 .78rem/1.2 "Source Sans 3",system-ui,sans-serif;text-transform:uppercase;letter-spacing:.09em;color:var(--ink)}
+.example{--cb:var(--accent);--cbg:var(--accent-soft)}
+.practice{--cb:var(--tip-bd);--cbg:var(--tip-bg)}
+.warn{--cb:var(--warn-bd);--cbg:var(--warn-bg);color:var(--warn-tx)}
+.warn .ct{color:var(--warn-tx)}
+.dialog p{margin:.35em 0}
+.sp{font-weight:700;color:var(--ink)}
+
+.steps{counter-reset:s;list-style:none;padding:0;margin:16px 0}
+.steps li{counter-increment:s;position:relative;padding:3px 0 14px 54px;min-height:44px}
+.steps li::before{content:counter(s);position:absolute;left:0;top:1px;width:38px;height:38px;border-radius:50%;background:var(--bc);color:var(--on);border:1px solid var(--line);display:grid;place-items:center;font:800 1.05rem "Bricolage Grotesque",system-ui,sans-serif}
+.steps b{color:var(--ink)}
+
+.scroll{overflow-x:auto;margin:16px 0}
+table{border-collapse:collapse;width:100%;background:var(--surface);font-size:.98rem}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+th{background:var(--bg);color:var(--ink)}
+
+.belt-row{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:16px 0}
+.belt-row li{flex:1 1 90px;text-align:center;font-size:.93rem}
+.belt-row i{display:block;height:28px;border-radius:5px;margin-bottom:6px;border:1px solid var(--line)}
+.belt{display:flex;justify-content:flex-end;height:38px;max-width:420px;border-radius:6px;background:var(--b2);border:1px solid var(--line);margin:14px 0 6px;overflow:hidden}
+.belt .tip{width:120px;background:#111;display:flex;gap:9px;align-items:stretch;justify-content:center;padding:0 12px}
+.belt .tip i{width:9px;background:#fff}
+
+.check{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:8px;list-style:none;padding:0;margin:16px 0}
+.check label{display:flex;gap:10px;align-items:flex-start;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 12px;cursor:pointer;font-size:1rem}
+.check input{margin-top:6px;width:18px;height:18px;accent-color:var(--accent);flex:none}
+
+/* exercícios */
+.ex{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:20px 22px;margin-top:32px}
+.ex h3{margin-top:0}
+.ex .hint{color:var(--muted);font-size:.97rem;margin-top:0}
+.ex ol{padding-left:1.3em;margin:0}
+.ex li{margin:0 0 18px}
+.tag{display:inline-block;font:700 .72rem/1 "Source Sans 3",system-ui,sans-serif;text-transform:uppercase;letter-spacing:.06em;background:var(--accent-soft);color:var(--accent);padding:5px 9px;border-radius:999px;margin-right:6px;vertical-align:2px}
+details{margin-top:6px}
+summary{cursor:pointer;font-weight:700;color:var(--accent);padding:6px 0}
+details>div{padding:10px 14px;background:var(--surface);border-left:4px solid var(--accent);border-radius:8px;margin-top:4px}
+details>div p{margin:.3em 0}
+
+.pager{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:26px}
+
+/* videos, rodapé */
+.videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin:18px 0}
+.videos a{display:block;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;text-decoration:none;color:var(--text);box-shadow:var(--shadow)}
+.videos a:hover{border-color:var(--accent)}
+.videos b{display:block;color:var(--ink);margin-bottom:4px}
+.videos span{font-size:.93rem;color:var(--muted)}
+.infographic{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:8px;box-shadow:var(--shadow)}
+svg{width:100%;height:auto;display:block}
+footer{margin-top:50px;padding:30px 0 56px;border-top:1px solid var(--line);color:var(--muted);font-size:.93rem}
+footer p{margin:.5em 0}
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="top" id="topo">
+<div class="bar">
+<a class="brand" href="#topo">Jiu-Jitsu <b>para Mulheres</b></a>
+<nav aria-label="Seções do curso">
+<a href="#roteiro">Roteiro</a>
+<a href="#unidade-1">1 · O que é</a>
+<a href="#unidade-2">2 · Preparação</a>
+<a href="#unidade-3">3 · Fundamentos</a>
+<a href="#unidade-4">4 · Defesa e confiança</a>
+<a href="#resumo">Resumo</a>
+<a href="#videos">Vídeos</a>
+</nav>
+</div>
+<div class="progress" aria-hidden="true"><i id="bar"></i></div>
+</header>
+
+<main id="conteudo">
 <div class="wrap">
-<header class="hero" id="inicio"><h1>Jiu-Jitsu para Mulheres: Primeiros Passos</h1>
-<p>Curso livre e gratuito para mulheres que nunca treinaram artes marciais. Aqui você entende o que é o jiu-jitsu, como se preparar, quais são os movimentos básicos e como a prática aumenta a confiança. Técnica vale mais que força.</p>
-<figure class="fig ph"><img data-n="cumprimento" alt="Duas mulheres se cumprimentando no tatame antes do treino de jiu-jitsu" loading="lazy"><div class="alt"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 276" role="img" aria-label="Ilustração: duas mulheres se cumprimentam em uma reverência no tatame"><rect width="600" height="276" rx="16" fill="#eef0fa"/><rect x="14" y="222" width="572" height="12" rx="6" fill="#d3d7ec"/><polyline points="212,93 190,150" fill="none" stroke="#1b2150" stroke-width="25" stroke-linecap="round" stroke-linejoin="round"/><polyline points="212,93 190,150" fill="none" stroke="#fff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/><polyline points="190,150 184,218" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="190,150 184,218" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="190,150 206,218" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="190,150 206,218" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="212,100 203,134 197,160" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="212,100 203,134 197,160" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><circle cx="219" cy="63" r="7" fill="#2f1f1b"/><circle cx="205" cy="72" r="13" fill="#8d5a3b" stroke="#1b2150" stroke-width="2.5"/><path d="M192,71 A13,13 0 0 1 218,71 Z" fill="#2f1f1b"/><rect x="181" y="146" width="18" height="8" rx="2" fill="#1f5fd6" stroke="#1b2150" stroke-width="2"/><polyline points="392,125 410,172" fill="none" stroke="#1b2150" stroke-width="25" stroke-linecap="round" stroke-linejoin="round"/><polyline points="392,125 410,172" fill="none" stroke="#7ea6f0" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/><polyline points="410,172 404,218" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="410,172 404,218" fill="none" stroke="#7ea6f0" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="410,172 424,218" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="410,172 424,218" fill="none" stroke="#7ea6f0" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="392,130 401,156 405,176" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="392,130 401,156 405,176" fill="none" stroke="#7ea6f0" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><circle cx="386" cy="97" r="7" fill="#2f1f1b"/><circle cx="400" cy="106" r="13" fill="#e0a97f" stroke="#1b2150" stroke-width="2.5"/><path d="M387,105 A13,13 0 0 1 413,105 Z" fill="#2f1f1b"/><rect x="401" y="168" width="18" height="8" rx="2" fill="#cfd3e6" stroke="#1b2150" stroke-width="2"/><text x="300" y="36" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="20" font-weight="700" fill="#1b2150">Oss! O treino começa com um cumprimento</text><text x="300" y="262" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="15" font-weight="400" fill="#5d6280">respeito e cooperação vêm antes da técnica</text></svg></div><figcaption>Todo treino começa com respeito: o cumprimento</figcaption></figure><div class="cards"><a class="card" href="#unidade-1" style="--bc:var(--b1)"><b>Unidade 1</b><span>O que é e por que começar</span></a><a class="card" href="#unidade-2" style="--bc:var(--b2)"><b>Unidade 2</b><span>Roupa, faixas e etiqueta</span></a><a class="card" href="#unidade-3" style="--bc:var(--b3)"><b>Unidade 3</b><span>Postura, solo e quedas</span></a><a class="card" href="#unidade-4" style="--bc:var(--b4)"><b>Unidade 4</b><span>Defesa pessoal e confiança</span></a></div></header>
-<section id="unidade-1" class="unit" style="--bc:var(--b1)"><h2><span class="num">1</span>O que é o jiu-jitsu e por que começar</h2><p class="goal"><b>Objetivo:</b> explicar de onde vem o jiu-jitsu, qual é o princípio central da arte e quais benefícios ela traz.</p><figure class="fig ph"><img data-n="controlar-distancia,ontrolar-distancia" alt="Duas mulheres treinando jiu-jitsu no chão: a que está por baixo usa a perna para controlar a distância" loading="lazy"><div class="alt"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 246" role="img" aria-label="Ilustração: a mulher menor, deitada, usa as pernas para controlar a parceira maior"><rect width="600" height="246" rx="16" fill="#eef0fa"/><rect x="14" y="196" width="572" height="12" rx="6" fill="#d3d7ec"/><polyline points="110,184 190,184" fill="none" stroke="#1b2150" stroke-width="25" stroke-linecap="round" stroke-linejoin="round"/><polyline points="110,184 190,184" fill="none" stroke="#fff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/><polyline points="190,184 240,136 300,150" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="190,184 240,136 300,150" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="190,184 232,150 294,176" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="190,184 232,150 294,176" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="118,180 160,160 246,118" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="118,180 160,160 246,118" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><circle cx="78" cy="175" r="7" fill="#2f1f1b"/><circle cx="92" cy="184" r="13" fill="#8d5a3b" stroke="#1b2150" stroke-width="2.5"/><path d="M79,183 A13,13 0 0 1 105,183 Z" fill="#2f1f1b"/><rect x="181" y="180" width="18" height="8" rx="2" fill="#cfd3e6" stroke="#1b2150" stroke-width="2"/><polyline points="332,88 356,152" fill="none" stroke="#1b2150" stroke-width="25" stroke-linecap="round" stroke-linejoin="round"/><polyline points="332,88 356,152" fill="none" stroke="#7ea6f0" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/><polyline points="356,152 392,190 344,192" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="356,152 392,190 344,192" fill="none" stroke="#7ea6f0" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="356,152 372,176" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="356,152 372,176" fill="none" stroke="#7ea6f0" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="334,98 306,122 252,118" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="334,98 306,122 252,118" fill="none" stroke="#7ea6f0" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><circle cx="352" cy="55" r="7" fill="#2f1f1b"/><circle cx="338" cy="64" r="13" fill="#e0a97f" stroke="#1b2150" stroke-width="2.5"/><path d="M325,63 A13,13 0 0 1 351,63 Z" fill="#2f1f1b"/><rect x="347" y="148" width="18" height="8" rx="2" fill="#1f5fd6" stroke="#1b2150" stroke-width="2"/><line x1="250" y1="70" x2="292" y2="120" stroke="#c92a6b" stroke-width="4" stroke-linecap="round"/><polyline points="281.75292111174974,116.00032823121995 292,120 289.82908739044933,109.2163485571123" fill="none" stroke="#c92a6b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><text x="215" y="60" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="15" font-weight="400" fill="#1b2150">pernas controlam a distância</text><text x="300" y="228" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="15" font-weight="400" fill="#5d6280">a menor usa alavanca e posição, não força</text></svg></div><figcaption>A menor usa a perna para controlar a distância da parceira maior</figcaption></figure><h3>De onde vem</h3><p>O jiu-jitsu brasileiro (JJB) tem raízes no jiu-jitsu e no judô japoneses. No início do século XX, o judoca Mitsuyo Maeda veio ao Brasil e ensinou a família Gracie. Eles adaptaram as técnicas, com muita ênfase na luta no chão, e o resultado se espalhou pelo mundo.</p><h3>Técnica vence força</h3><p>O jiu-jitsu é chamado de “arte suave”. Ele usa <b>alavancas, equilíbrio e posicionamento</b> para controlar uma pessoa maior ou mais forte. Por isso combina tanto com mulheres: o foco está em entender o movimento, não em ter mais músculos.</p><aside class="ex"><b>Exemplo na prática</b><p>Ana tem 1,60 m e treina com uma colega bem mais pesada. Em vez de empurrar com os braços, ela deita de costas e usa as pernas (a “guarda”) para manter a colega à distância. Com o quadril, muda o ângulo e cria espaço. Ela não ganhou na força: ganhou na posição.</p></aside><h3>Como é uma aula</h3><ul><li><b>Aquecimento:</b> mobilidade e movimentos básicos de solo.</li><li><b>Técnica do dia:</b> o professor demonstra e você repete com uma parceira, devagar.</li><li><b>Treino específico:</b> a técnica com resistência leve.</li><li><b>Rolamento:</b> treino livre com resistência controlada.</li><li><b>Alongamento e cumprimento final.</b></li></ul><p>Quando a parceira bate na sua pele ou no tatame (o “tapa”), o movimento para na hora.</p><figure class="fig ph"><img data-n="aula" alt="Professora ensinando uma turma de mulheres sentadas no tatame" loading="lazy"><div class="alt"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 246" role="img" aria-label="Ilustração: a mulher menor, deitada, usa as pernas para controlar a parceira maior"><rect width="600" height="246" rx="16" fill="#eef0fa"/><rect x="14" y="196" width="572" height="12" rx="6" fill="#d3d7ec"/><polyline points="110,184 190,184" fill="none" stroke="#1b2150" stroke-width="25" stroke-linecap="round" stroke-linejoin="round"/><polyline points="110,184 190,184" fill="none" stroke="#fff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/><polyline points="190,184 240,136 300,150" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="190,184 240,136 300,150" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="190,184 232,150 294,176" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="190,184 232,150 294,176" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="118,180 160,160 246,118" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="118,180 160,160 246,118" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><circle cx="78" cy="175" r="7" fill="#2f1f1b"/><circle cx="92" cy="184" r="13" fill="#8d5a3b" stroke="#1b2150" stroke-width="2.5"/><path d="M79,183 A13,13 0 0 1 105,183 Z" fill="#2f1f1b"/><rect x="181" y="180" width="18" height="8" rx="2" fill="#cfd3e6" stroke="#1b2150" stroke-width="2"/><polyline points="332,88 356,152" fill="none" stroke="#1b2150" stroke-width="25" stroke-linecap="round" stroke-linejoin="round"/><polyline points="332,88 356,152" fill="none" stroke="#7ea6f0" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/><polyline points="356,152 392,190 344,192" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="356,152 392,190 344,192" fill="none" stroke="#7ea6f0" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="356,152 372,176" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="356,152 372,176" fill="none" stroke="#7ea6f0" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="334,98 306,122 252,118" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="334,98 306,122 252,118" fill="none" stroke="#7ea6f0" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><circle cx="352" cy="55" r="7" fill="#2f1f1b"/><circle cx="338" cy="64" r="13" fill="#e0a97f" stroke="#1b2150" stroke-width="2.5"/><path d="M325,63 A13,13 0 0 1 351,63 Z" fill="#2f1f1b"/><rect x="347" y="148" width="18" height="8" rx="2" fill="#1f5fd6" stroke="#1b2150" stroke-width="2"/><line x1="250" y1="70" x2="292" y2="120" stroke="#c92a6b" stroke-width="4" stroke-linecap="round"/><polyline points="281.75292111174974,116.00032823121995 292,120 289.82908739044933,109.2163485571123" fill="none" stroke="#c92a6b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><text x="215" y="60" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="15" font-weight="400" fill="#1b2150">pernas controlam a distância</text><text x="300" y="228" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="15" font-weight="400" fill="#5d6280">a menor usa alavanca e posição, não força</text></svg></div><figcaption>Aula em turma: a professora mostra a técnica e as alunas praticam em duplas</figcaption></figure><h3>Benefícios</h3><ul><li><b>Físicos:</b> condicionamento, flexibilidade, coordenação e equilíbrio.</li><li><b>Mentais:</b> foco, disciplina e calma sob pressão.</li><li><b>Sociais:</b> uma comunidade de treino que acolhe iniciantes.</li><li><b>Segurança:</b> noções de autodefesa (veja a Unidade 4).</li></ul><h3>Mitos e verdades</h3><div class="scroll"><table><tr><th>Mito</th><th>Realidade</th></tr><tr><td>“Preciso ser forte.”</td><td>A força vem com o treino; no começo, o que importa é a técnica.</td></tr><tr><td>“Preciso estar em forma.”</td><td>Ninguém começa em forma; o treino evolui com você.</td></tr><tr><td>“É violento.”</td><td>Bem orientado, é um treino controlado, com regras e respeito.</td></tr><tr><td>“Só tem homens.”</td><td>Muitas academias têm turmas femininas ou aulas mistas com várias alunas.</td></tr></table></div><h3>Como começar com segurança</h3><p>Procure uma academia com professor qualificado, faça uma aula experimental e avise sobre lesões ou condições de saúde. Este conteúdo é introdutório e não substitui a orientação presencial.</p><h3>Para fixar</h3><ol class="q"><li>Qual é o princípio central do jiu-jitsu?<details><summary>Ver resposta</summary><p>Técnica vence força: alavancas, equilíbrio e posição permitem controlar alguém maior ou mais forte.</p></details></li><li>Cite dois benefícios da prática.<details><summary>Ver resposta</summary><p>Por exemplo: condicionamento físico e confiança. Também valem flexibilidade, foco, disciplina e comunidade.</p></details></li><li>O que significa o “tapa” no treino?<details><summary>Ver resposta</summary><p>É o sinal de que a parceira quer parar. O movimento para na hora, sempre.</p></details></li></ol><div class="ex pr"><b>Para praticar</b><p>Escreva em três linhas por que você quer começar e qual mito da lista mais pesava na sua decisão.</p></div></section><section id="unidade-2" class="unit" style="--bc:var(--b2)"><h2><span class="num">2</span>Preparação: roupa, faixas, etiqueta e cuidados</h2><p class="goal"><b>Objetivo:</b> saber o que levar ao primeiro treino, entender o sistema de faixas e conhecer as regras básicas de convivência no tatame.</p><figure class="fig ph"><img data-n="roupa-e-faixa" alt="Kimono branco dobrado com faixa azul, garrafa de água e chinelos sobre o tatame" loading="lazy"><div class="alt"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 214" role="img" aria-label="Ilustração: casaco e calça de kimono, faixa azul, garrafa de água e chinelos"><rect width="600" height="214" rx="16" fill="#eef0fa"/><rect x="14" y="176" width="572" height="12" rx="6" fill="#d3d7ec"/><g fill="#fff" stroke="#1b2150" stroke-width="3" stroke-linejoin="round"><polygon points="60,40 110,30 140,30 190,40 218,98 192,108 176,86 176,156 76,156 76,86 60,108 34,98"/><polygon points="240,34 336,34 342,156 300,156 288,84 276,156 234,156"/></g><path d="M126,34 L126,150 M150,34 L126,70" stroke="#1b2150" stroke-width="2" fill="none"/><rect x="372" y="56" width="190" height="26" rx="4" fill="#1f5fd6" stroke="#1b2150" stroke-width="3"/><rect x="520" y="56" width="42" height="26" fill="#111" stroke="#1b2150" stroke-width="3"/><rect x="528" y="56" width="6" height="26" fill="#fff"/><rect x="540" y="56" width="6" height="26" fill="#fff"/><rect x="392" y="102" width="30" height="62" rx="9" fill="#9fd3f0" stroke="#1b2150" stroke-width="3"/><rect x="398" y="94" width="18" height="10" rx="3" fill="#c92a6b"/><ellipse cx="470" cy="150" rx="22" ry="9" fill="#c92a6b" stroke="#1b2150" stroke-width="3"/><ellipse cx="520" cy="150" rx="22" ry="9" fill="#c92a6b" stroke="#1b2150" stroke-width="3"/><text x="126" y="198" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="15" font-weight="400" fill="#1b2150">casaco</text><text x="288" y="198" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="15" font-weight="400" fill="#1b2150">calça</text><text x="467" y="40" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="15" font-weight="400" fill="#1b2150">faixa azul com dois graus</text><text x="407" y="196" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="15" font-weight="400" fill="#1b2150">água</text><text x="495" y="196" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="15" font-weight="400" fill="#1b2150">chinelo</text></svg></div><figcaption>O que levar ao primeiro treino: kimono, faixa, água e chinelo</figcaption></figure><h3>O que vestir</h3><p>No jiu-jitsu com <b>kimono</b> (gi), a roupa é um conjunto de casaco, calça e faixa, que costuma ser emprestado ou vendido na academia. No treino <b>sem kimono</b> (no-gi), usa-se camiseta justa e bermuda ou legging sem bolsos e sem zíper. Na aula experimental, pergunte à academia o que ela pede.</p><aside class="ex"><b>Exemplo na prática</b><p>Marina vai à aula experimental na quinta. Na véspera, ela pergunta à academia se há kimono emprestado, separa legging sem bolsos, camiseta justa, garrafa de água e chinelo, prende o cabelo e corta as unhas.</p></aside><h3>Checklist da primeira aula</h3><ul><li>Combinar a aula experimental e avisar sobre lesões ou condições de saúde.</li><li>Fazer uma refeição leve algumas horas antes.</li><li>Levar água, toalha e chinelo para andar fora do tatame.</li><li>Chegar cedo para conhecer a turma e o espaço.</li></ul><h3>As faixas</h3><p>Para adultos, a ordem é: <b>branca, azul, roxa, marrom e preta</b>. Os “graus” são listras na ponta da faixa (nas faixas de cor, até quatro). A progressão é lenta de propósito: cada faixa mostra anos de aprendizado, e começar na branca é o normal para todo mundo.</p><figure class="fig"><div class="belts"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 76" role="img" aria-label="Faixas de adultos: branca, azul, roxa, marrom e preta"><rect width="580" height="76" rx="16" fill="#fff"/><rect x="20" y="16" width="104" height="28" rx="5" fill="#cfd3e6" stroke="#1b2150" stroke-width="2"/><text x="72" y="64" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="14" font-weight="400" fill="#1b2150">branca</text><rect x="132" y="16" width="104" height="28" rx="5" fill="#1f5fd6" stroke="#1b2150" stroke-width="2"/><text x="184" y="64" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="14" font-weight="400" fill="#1b2150">azul</text><rect x="244" y="16" width="104" height="28" rx="5" fill="#6a3fa3" stroke="#1b2150" stroke-width="2"/><text x="296" y="64" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="14" font-weight="400" fill="#1b2150">roxa</text><rect x="356" y="16" width="104" height="28" rx="5" fill="#6b4326" stroke="#1b2150" stroke-width="2"/><text x="408" y="64" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="14" font-weight="400" fill="#1b2150">marrom</text><rect x="468" y="16" width="104" height="28" rx="5" fill="#111" stroke="#1b2150" stroke-width="2"/><text x="520" y="64" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="14" font-weight="400" fill="#1b2150">preta</text></svg></div><figcaption>As faixas dos adultos: branca, azul, roxa, marrom e preta</figcaption></figure><h3>Etiqueta no tatame</h3><ul><li>Unhas curtas e cabelo preso.</li><li>Sem anéis, brincos, colares ou relógio.</li><li>Higiene em dia: kimono limpo e chinelo para andar fora do tatame.</li><li>Cumprimente a turma e o professor, e respeite o “tapa” sempre.</li><li>Diga à parceira se algo incomodar. Treinar é cooperar.</li></ul><h3>Cuidados com o corpo</h3><p>Faça sempre o aquecimento, beba água, descanse entre os treinos e avise o professor sobre dor, lesão ou gravidez. Pare se sentir dor aguda. Se o ciclo menstrual alterar sua disposição, ajuste a intensidade e converse com o professor. Em caso de dúvida de saúde, consulte um médico antes de começar.</p><h3>Para fixar</h3><ol class="q"><li>Qual é a ordem das faixas para adultos?<details><summary>Ver resposta</summary><p>Branca, azul, roxa, marrom e preta.</p></details></li><li>Cite três regras de etiqueta no tatame.<details><summary>Ver resposta</summary><p>Por exemplo: unhas curtas e cabelo preso; sem joias; respeitar o tapa; manter a higiene.</p></details></li><li>Por que avisar o professor sobre lesões?<details><summary>Ver resposta</summary><p>Para que ele adapte os exercícios e evite agravar a lesão.</p></details></li></ol><div class="ex pr"><b>Para praticar</b><p>Monte a sua lista do que levar à primeira aula, em ordem de importância.</p></div></section><section id="unidade-3" class="unit" style="--bc:var(--b3)"><h2><span class="num">3</span>Fundamentos: postura, solo e quedas seguras</h2><p class="goal"><b>Objetivo:</b> reconhecer os movimentos básicos que sustentam todo o jiu-jitsu e entender como cair com segurança.</p><figure class="fig ph gal"><div class="g"><img data-n="ponte" alt="Mulher fazendo a ponte no tatame" loading="lazy"><img data-n="fuga-de-quadril" alt="Mulher fazendo a fuga de quadril" loading="lazy"><img data-n="queda-segura" alt="Mulher caindo com segurança no tatame" loading="lazy"></div><div class="alt"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 236" role="img" aria-label="Ilustração em três quadros: ponte, fuga de quadril e queda segura"><rect width="600" height="236" rx="16" fill="#eef0fa"/><g transform="translate(4,0)"><rect x="4" y="10" width="184" height="206" rx="12" fill="#fff" opacity=".6"/><text x="96" y="34" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="17" font-weight="700" fill="#1b2150">Ponte</text><rect x="8" y="190" width="176" height="12" rx="6" fill="#d3d7ec"/><polyline points="46,176 106,126" fill="none" stroke="#1b2150" stroke-width="25" stroke-linecap="round" stroke-linejoin="round"/><polyline points="46,176 106,126" fill="none" stroke="#fff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/><polyline points="106,126 142,152 150,182" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="106,126 142,152 150,182" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="52,178 88,180" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="52,178 88,180" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="161" r="7" fill="#2f1f1b"/><circle cx="30" cy="170" r="13" fill="#8d5a3b" stroke="#1b2150" stroke-width="2.5"/><path d="M17,169 A13,13 0 0 1 43,169 Z" fill="#2f1f1b"/><rect x="97" y="122" width="18" height="8" rx="2" fill="#6a3fa3" stroke="#1b2150" stroke-width="2"/><line x1="106" y1="100" x2="106" y2="60" stroke="#c92a6b" stroke-width="4" stroke-linecap="round"/><polyline points="111.27368092464623,69.6534081807941 106,60 100.72631907535377,69.6534081807941" fill="none" stroke="#c92a6b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><text x="96" y="212" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="13" font-weight="400" fill="#5d6280">quadril sobe</text></g><g transform="translate(204,0)"><rect x="4" y="10" width="184" height="206" rx="12" fill="#fff" opacity=".6"/><text x="96" y="34" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="17" font-weight="700" fill="#1b2150">Fuga de quadril</text><rect x="8" y="190" width="176" height="12" rx="6" fill="#d3d7ec"/><polyline points="46,176 100,176" fill="none" stroke="#1b2150" stroke-width="25" stroke-linecap="round" stroke-linejoin="round"/><polyline points="46,176 100,176" fill="none" stroke="#7ea6f0" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/><polyline points="100,176 128,148 136,180" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="100,176 128,148 136,180" fill="none" stroke="#7ea6f0" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="52,170 76,150" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="52,170 76,150" fill="none" stroke="#7ea6f0" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="163" r="7" fill="#2f1f1b"/><circle cx="30" cy="172" r="13" fill="#e0a97f" stroke="#1b2150" stroke-width="2.5"/><path d="M17,171 A13,13 0 0 1 43,171 Z" fill="#2f1f1b"/><rect x="91" y="172" width="18" height="8" rx="2" fill="#6a3fa3" stroke="#1b2150" stroke-width="2"/><line x1="116" y1="134" x2="64" y2="134" stroke="#c92a6b" stroke-width="4" stroke-linecap="round"/><polyline points="73.6534081807941,128.72631907535376 64,134 73.6534081807941,139.27368092464624" fill="none" stroke="#c92a6b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><text x="96" y="212" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="13" font-weight="400" fill="#5d6280">quadril desliza</text></g><g transform="translate(404,0)"><rect x="4" y="10" width="184" height="206" rx="12" fill="#fff" opacity=".6"/><text x="96" y="34" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="17" font-weight="700" fill="#1b2150">Queda segura</text><rect x="8" y="190" width="176" height="12" rx="6" fill="#d3d7ec"/><polyline points="86,150 112,158" fill="none" stroke="#1b2150" stroke-width="25" stroke-linecap="round" stroke-linejoin="round"/><polyline points="86,150 112,158" fill="none" stroke="#fff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/><polyline points="112,158 134,134 104,122" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="112,158 134,134 104,122" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="90,156 130,178 168,182" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="90,156 130,178 168,182" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><circle cx="64" cy="125" r="7" fill="#2f1f1b"/><circle cx="78" cy="134" r="13" fill="#8d5a3b" stroke="#1b2150" stroke-width="2.5"/><path d="M65,133 A13,13 0 0 1 91,133 Z" fill="#2f1f1b"/><rect x="103" y="154" width="18" height="8" rx="2" fill="#6a3fa3" stroke="#1b2150" stroke-width="2"/><line x1="150" y1="150" x2="168" y2="176" stroke="#c92a6b" stroke-width="3" stroke-linecap="round"/><polyline points="158.16920445630498,171.0648749784766 168,176 166.84116301123476,165.06121136352525" fill="none" stroke="#c92a6b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><text x="96" y="212" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="13" font-weight="400" fill="#5d6280">queixo no peito</text><text x="96" y="226" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="13" font-weight="400" fill="#5d6280">braço bate no chão</text></g></svg></div><figcaption>Três movimentos básicos: ponte, fuga de quadril e queda segura</figcaption></figure><p>Atenção: as técnicas devem ser aprendidas <b>com um professor</b>. Aqui você conhece a ideia de cada movimento.</p><h3>Postura e base</h3><p>Uma boa base é ter os pés afastados, os joelhos levemente flexionados, a coluna firme e o centro de gravidade baixo. Quem tem base é difícil de desequilibrar. Quase todo movimento do jiu-jitsu começa por ela.</p><h3>Movimentos básicos de solo</h3><ul><li><b>Ponte:</b> deitada de costas, você eleva o quadril do chão. Serve para sair de baixo de uma pessoa e criar espaço.</li><li><b>Fuga de quadril:</b> deslizando o quadril para o lado, você afasta o corpo e cria distância.</li><li><b>Guarda:</b> de costas, você usa as pernas para controlar a distância da parceira. É o ponto forte de quem é menor.</li></ul><p>Todos usam o <b>quadril</b>, que é o centro do jiu-jitsu, e não a força dos braços.</p><aside class="ex"><b>Exemplo na prática</b><p>Num treino de ponte, a colega fica sobre você, sem pressionar. Você apoia os pés, eleva o quadril e, ao sentir o espaço, desliza o corpo para o lado. O movimento nasce do quadril, e o pescoço fica relaxado.</p></aside><h3>Quedas seguras</h3><p>Cair faz parte do treino, e saber cair evita lesões. Os princípios são: <b>queixo no peito</b> para proteger a cabeça, <b>corpo arredondado</b>, e <b>bater o braço no chão</b> para dividir o impacto. Nunca tente amortecer a queda com a mão aberta ou com o cotovelo esticado. Treine as quedas devagar e com o professor.</p><h3>Mobilidade para fazer em casa</h3><ul><li>Círculos de quadril, de pé, devagar.</li><li>Ponte de glúteos no chão: 2 séries de 8 repetições.</li><li>Agachamento sem peso, mantendo os calcanhares no chão.</li><li>Prancha de 20 segundos, com o abdômen firme.</li></ul><h3>Para fixar</h3><ol class="q"><li>Qual parte do corpo é central nos movimentos de solo?<details><summary>Ver resposta</summary><p>O quadril.</p></details></li><li>Para que serve a ponte?<details><summary>Ver resposta</summary><p>Para elevar o quadril, sair de baixo de uma pessoa e criar espaço.</p></details></li><li>Cite dois cuidados ao cair.<details><summary>Ver resposta</summary><p>Queixo no peito; corpo arredondado; bater o braço no chão; não apoiar com a mão aberta ou o cotovelo esticado.</p></details></li></ol><div class="ex pr"><b>Para praticar</b><p>Faça a mobilidade da lista, devagar, e anote qual movimento foi mais difícil para levar ao professor.</p></div></section><section id="unidade-4" class="unit" style="--bc:var(--b4)"><h2><span class="num">4</span>Defesa pessoal e confiança</h2><p class="goal"><b>Objetivo:</b> compreender os princípios de autodefesa que o jiu-jitsu desenvolve e como isso se liga à confiança.</p><figure class="fig ph"><img data-n="espaco-e-base" alt="Mulher em pé, firme, mantendo espaço e base no tatame" loading="lazy"><div class="alt"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 236" role="img" aria-label="Ilustração: a mulher mantém seu espaço, firme na base, com saída e pedido de ajuda"><rect width="600" height="236" rx="16" fill="#eef0fa"/><rect x="14" y="206" width="572" height="12" rx="6" fill="#d3d7ec"/><circle cx="200" cy="126" r="88" fill="none" stroke="#c92a6b" stroke-width="3" stroke-dasharray="8 8"/><polyline points="200,96 200,150" fill="none" stroke="#1b2150" stroke-width="25" stroke-linecap="round" stroke-linejoin="round"/><polyline points="200,96 200,150" fill="none" stroke="#fff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/><polyline points="200,150 188,204" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="200,150 188,204" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="200,150 214,204" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="200,150 214,204" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="200,104 232,114 250,102" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="200,104 232,114 250,102" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="200,104 236,126 252,116" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="200,104 236,126 252,116" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><circle cx="186" cy="67" r="7" fill="#2f1f1b"/><circle cx="200" cy="76" r="13" fill="#f1c9a5" stroke="#1b2150" stroke-width="2.5"/><path d="M187,75 A13,13 0 0 1 213,75 Z" fill="#2f1f1b"/><rect x="191" y="146" width="18" height="8" rx="2" fill="#6a3fa3" stroke="#1b2150" stroke-width="2"/><polyline points="450,92 450,150" fill="none" stroke="#1b2150" stroke-width="25" stroke-linecap="round" stroke-linejoin="round"/><polyline points="450,92 450,150" fill="none" stroke="#7ea6f0" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/><polyline points="450,150 438,204" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="450,150 438,204" fill="none" stroke="#7ea6f0" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="450,150 464,204" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="450,150 464,204" fill="none" stroke="#7ea6f0" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="450,100 424,120" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="450,100 424,120" fill="none" stroke="#7ea6f0" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><circle cx="464" cy="61" r="7" fill="#2f1f1b"/><circle cx="450" cy="70" r="13" fill="#8d5a3b" stroke="#1b2150" stroke-width="2.5"/><path d="M437,69 A13,13 0 0 1 463,69 Z" fill="#2f1f1b"/><rect x="441" y="146" width="18" height="8" rx="2" fill="#6b4326" stroke="#1b2150" stroke-width="2"/><text x="200" y="22" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="16" font-weight="600" fill="#1b2150">seu espaço e sua base</text><line x1="108" y1="140" x2="30" y2="140" stroke="#c92a6b" stroke-width="4" stroke-linecap="round"/><polyline points="39.6534081807941,134.72631907535376 30,140 39.6534081807941,145.27368092464624" fill="none" stroke="#c92a6b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><text x="62" y="108" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="14" font-weight="400" fill="#1b2150">sair e</text><text x="62" y="124" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="14" font-weight="400" fill="#1b2150">pedir ajuda</text><text x="450" y="40" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="14" font-weight="400" fill="#5d6280">distância segura</text></svg></div><figcaption>Manter espaço e base para sair e pedir ajuda</figcaption></figure><h3>Princípios, não truques</h3><p>Não existe golpe mágico. O que o treino dá é um conjunto de habilidades que funcionam juntas:</p><ul><li><b>Atenção ao ambiente:</b> evitar o risco vale mais que vencer um conflito.</li><li><b>Distância e base:</b> manter espaço e equilíbrio.</li><li><b>Calma sob pressão:</b> quem já esteve em posições difíceis no treino aprende a respirar e pensar.</li><li><b>Objetivo de escapar:</b> o foco é criar uma oportunidade para sair e pedir ajuda, não lutar.</li></ul><aside class="ex"><b>Exemplo na prática</b><p>Carla percebe que alguém a segue no caminho de casa. Ela não confronta: atravessa para uma rua movimentada, entra num comércio aberto e liga para alguém de confiança. A habilidade principal foi atenção e decisão, não golpe.</p></aside><h3>Prevenção no dia a dia</h3><ul><li>Prefira caminhos movimentados e iluminados.</li><li>Avise alguém quando estiver chegando em casa.</li><li>Confie na sua percepção: se algo parece errado, mude de lugar.</li></ul><h3>Os limites</h3><p>O jiu-jitsu ajuda, mas não garante proteção em qualquer situação. Treinar com regularidade e orientação faz diferença. Em risco real, afastar-se e buscar ajuda é sempre a melhor escolha.</p><h3>Confiança</h3><p>Com o tempo, o corpo aprende que é capaz de resolver problemas. Muitas alunas relatam mais segurança, postura e disciplina também fora do tatame. Esse efeito varia de pessoa para pessoa e vem da prática constante.</p><figure class="fig ph"><img data-n="confianca" alt="Grupo de mulheres sorrindo no tatame, de kimono" loading="lazy"><div class="alt"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 236" role="img" aria-label="Ilustração: a mulher mantém seu espaço, firme na base, com saída e pedido de ajuda"><rect width="600" height="236" rx="16" fill="#eef0fa"/><rect x="14" y="206" width="572" height="12" rx="6" fill="#d3d7ec"/><circle cx="200" cy="126" r="88" fill="none" stroke="#c92a6b" stroke-width="3" stroke-dasharray="8 8"/><polyline points="200,96 200,150" fill="none" stroke="#1b2150" stroke-width="25" stroke-linecap="round" stroke-linejoin="round"/><polyline points="200,96 200,150" fill="none" stroke="#fff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/><polyline points="200,150 188,204" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="200,150 188,204" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="200,150 214,204" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="200,150 214,204" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="200,104 232,114 250,102" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="200,104 232,114 250,102" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="200,104 236,126 252,116" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="200,104 236,126 252,116" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><circle cx="186" cy="67" r="7" fill="#2f1f1b"/><circle cx="200" cy="76" r="13" fill="#f1c9a5" stroke="#1b2150" stroke-width="2.5"/><path d="M187,75 A13,13 0 0 1 213,75 Z" fill="#2f1f1b"/><rect x="191" y="146" width="18" height="8" rx="2" fill="#6a3fa3" stroke="#1b2150" stroke-width="2"/><polyline points="450,92 450,150" fill="none" stroke="#1b2150" stroke-width="25" stroke-linecap="round" stroke-linejoin="round"/><polyline points="450,92 450,150" fill="none" stroke="#7ea6f0" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/><polyline points="450,150 438,204" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="450,150 438,204" fill="none" stroke="#7ea6f0" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="450,150 464,204" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="450,150 464,204" fill="none" stroke="#7ea6f0" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><polyline points="450,100 424,120" fill="none" stroke="#1b2150" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polyline points="450,100 424,120" fill="none" stroke="#7ea6f0" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><circle cx="464" cy="61" r="7" fill="#2f1f1b"/><circle cx="450" cy="70" r="13" fill="#8d5a3b" stroke="#1b2150" stroke-width="2.5"/><path d="M437,69 A13,13 0 0 1 463,69 Z" fill="#2f1f1b"/><rect x="441" y="146" width="18" height="8" rx="2" fill="#6b4326" stroke="#1b2150" stroke-width="2"/><text x="200" y="22" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="16" font-weight="600" fill="#1b2150">seu espaço e sua base</text><line x1="108" y1="140" x2="30" y2="140" stroke="#c92a6b" stroke-width="4" stroke-linecap="round"/><polyline points="39.6534081807941,134.72631907535376 30,140 39.6534081807941,145.27368092464624" fill="none" stroke="#c92a6b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><text x="62" y="108" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="14" font-weight="400" fill="#1b2150">sair e</text><text x="62" y="124" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="14" font-weight="400" fill="#1b2150">pedir ajuda</text><text x="450" y="40" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="14" font-weight="400" fill="#5d6280">distância segura</text></svg></div><figcaption>A confiança cresce com a prática e com a turma</figcaption></figure><h3>Onde buscar ajuda</h3><ul><li><b>190:</b> Polícia Militar, em situação de perigo imediato.</li><li><b>Ligue 180:</b> Central de Atendimento à Mulher, para orientação sobre violência contra a mulher.</li></ul><h3>Para fixar</h3><ol class="q"><li>Por que “princípios” são mais úteis que “truques”?<details><summary>Ver resposta</summary><p>Porque funcionam em situações diferentes, enquanto um truque depende de condições específicas.</p></details></li><li>Qual é o objetivo de uma defesa pessoal bem pensada?<details><summary>Ver resposta</summary><p>Criar uma oportunidade para sair da situação e pedir ajuda.</p></details></li><li>Como o treino pode aumentar a confiança?<details><summary>Ver resposta</summary><p>Ao mostrar ao corpo que ele resolve problemas, com calma, base e prática constante.</p></details></li></ol><div class="ex pr"><b>Para praticar</b><p>Liste três hábitos de prevenção que você já tem e um que gostaria de incluir.</p></div></section>
-<section id="atividades"><h2>Atividades de revisão</h2><p>Verdadeiro ou falso? Pense na resposta e depois confira.</p><ol class="q"><li>A técnica é mais importante que a força no começo.<details><summary>Verdadeiro ou falso?</summary><p>Verdadeiro: é o princípio central do jiu-jitsu.</p></details></li><li>Quem não está em forma deve esperar para começar.<details><summary>Verdadeiro ou falso?</summary><p>Falso: o treino evolui com você.</p></details></li><li>As faixas de adultos começam na azul.<details><summary>Verdadeiro ou falso?</summary><p>Falso: começam na branca.</p></details></li><li>A ponte usa o quadril para criar espaço.<details><summary>Verdadeiro ou falso?</summary><p>Verdadeiro.</p></details></li><li>Em risco real, o melhor é lutar até o fim.<details><summary>Verdadeiro ou falso?</summary><p>Falso: afastar-se e buscar ajuda é sempre a melhor escolha.</p></details></li></ol></section>
-<section id="infografico"><h2>Infográfico: resumo do curso</h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 426" role="img" aria-label="Infográfico: técnica vence força, os quatro passos do curso e as faixas de adultos"><rect width="700" height="426" rx="16" fill="#eef0fa"/><text x="350" y="46" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="28" font-weight="800" fill="#1b2150">Técnica vence força</text><rect x="40" y="70" width="190" height="104" rx="12" fill="#fff" stroke="#c92a6b" stroke-width="3"/><text x="135" y="110" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#1b2150">Alavanca</text><text x="135" y="138" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="15" font-weight="400" fill="#1b2150">usar o corpo</text><text x="135" y="158" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="15" font-weight="400" fill="#1b2150">como ferramenta</text><rect x="255" y="70" width="190" height="104" rx="12" fill="#fff" stroke="#c92a6b" stroke-width="3"/><text x="350" y="110" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#1b2150">Equilíbrio</text><text x="350" y="138" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="15" font-weight="400" fill="#1b2150">base firme e</text><text x="350" y="158" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="15" font-weight="400" fill="#1b2150">centro baixo</text><rect x="470" y="70" width="190" height="104" rx="12" fill="#fff" stroke="#c92a6b" stroke-width="3"/><text x="565" y="110" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#1b2150">Posição</text><text x="565" y="138" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="15" font-weight="400" fill="#1b2150">controlar</text><text x="565" y="158" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="15" font-weight="400" fill="#1b2150">antes de atacar</text><text x="350" y="214" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="19" font-weight="700" fill="#1b2150">Os quatro passos do curso</text><rect x="40" y="228" width="150" height="70" rx="10" fill="#cfd3e6"/><text x="115" y="256" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="17" font-weight="700" fill="#1b2150">1 O que é</text><text x="115" y="280" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="13" font-weight="400" fill="#1b2150">origem e benefícios</text><rect x="200" y="228" width="150" height="70" rx="10" fill="#1f5fd6"/><text x="275" y="256" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="17" font-weight="700" fill="#fff">2 Preparação</text><text x="275" y="280" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="13" font-weight="400" fill="#fff">roupa, faixas, etiqueta</text><rect x="360" y="228" width="150" height="70" rx="10" fill="#6a3fa3"/><text x="435" y="256" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="17" font-weight="700" fill="#fff">3 Fundamentos</text><text x="435" y="280" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="13" font-weight="400" fill="#fff">base, solo e quedas</text><rect x="520" y="228" width="150" height="70" rx="10" fill="#6b4326"/><text x="595" y="256" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="17" font-weight="700" fill="#fff">4 Defesa</text><text x="595" y="280" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="13" font-weight="400" fill="#fff">princípios e confiança</text><text x="350" y="334" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="16" font-weight="400" fill="#1b2150">Faixas de adultos: branca › azul › roxa › marrom › preta</text><rect x="110" y="346" width="92" height="20" rx="4" fill="#cfd3e6" stroke="#1b2150" stroke-width="1.5"/><rect x="210" y="346" width="92" height="20" rx="4" fill="#1f5fd6" stroke="#1b2150" stroke-width="1.5"/><rect x="310" y="346" width="92" height="20" rx="4" fill="#6a3fa3" stroke="#1b2150" stroke-width="1.5"/><rect x="410" y="346" width="92" height="20" rx="4" fill="#6b4326" stroke="#1b2150" stroke-width="1.5"/><rect x="510" y="346" width="92" height="20" rx="4" fill="#111" stroke="#1b2150" stroke-width="1.5"/><text x="350" y="404" text-anchor="middle" font-family="Source Sans 3,Carlito,DejaVu Sans,sans-serif" font-size="15" font-weight="400" fill="#5d6280">Antes de treinar: avise o professor sobre lesões, hidrate-se e respeite o tapa.</text></svg></section>
-<section id="videos"><h2>Vídeos para aprofundar</h2><p>Vídeos de outros canais do YouTube para complementar o estudo. Os créditos são de cada canal.</p><p><a class="btn" href="https://www.youtube.com/shorts/qN0bBfr9Mnw" target="_blank" rel="noopener">4 dicas para mulheres iniciantes (Diogo Almeida JJ)</a><a class="btn" href="https://www.youtube.com/shorts/hJOnBk82Mog" target="_blank" rel="noopener">Graduação de faixas infantil (Jiujitsufamiliaiala)</a><a class="btn" href="https://www.youtube.com/shorts/nel1Gf6B7Bs" target="_blank" rel="noopener">3 quedas para evoluir (Leonardo Henrique)</a></p><p class="note">Obs.: o vídeo sobre faixas mostra o sistema infantil, que é diferente do adulto apresentado na Unidade 2.</p></section>
-<section id="referencias"><h2>Referências</h2><ol><li>INTERNATIONAL BRAZILIAN JIU-JITSU FEDERATION (IBJJF). Sistema de graduação (faixas e graus). Disponível em: https://ibjjf.com. Acesso em: 17 nov. 2026.</li><li>DANAHER, John; GRACIE, Renzo. Mastering Jujitsu. Champaign: Human Kinetics, 2003.</li><li>BRASIL. Ministério das Mulheres. Ligue 180: Central de Atendimento à Mulher. Disponível em: https://www.gov.br/mulheres. Acesso em: 17 nov. 2026.</li><li>DIOGO ALMEIDA JJ. 4 dicas para mulheres iniciantes. YouTube, vídeo curto. Disponível em: https://www.youtube.com/shorts/qN0bBfr9Mnw.</li><li>JIUJITSUFAMILIAIALA. Graduação de faixas infantil. YouTube, vídeo curto. Disponível em: https://www.youtube.com/shorts/hJOnBk82Mog.</li><li>LEONARDO HENRIQUE. 3 quedas para evoluir. YouTube, vídeo curto. Disponível em: https://www.youtube.com/shorts/nel1Gf6B7Bs.</li></ol></section>
-<footer>Conteúdo introdutório. Não substitui a orientação de um professor qualificado nem de um profissional de saúde.</footer>
-</div><script>const X=['jpg','jpeg','png','webp','JPG','PNG'];document.querySelectorAll('img[data-n]').forEach(m=>{const n=m.dataset.n.split(','),t=n.length*X.length;let k=0;const go=()=>{if(k>=t){const f=m.closest('figure');m.remove();if(!f.querySelector('img'))f.classList.add('nophoto');return}m.src=n[Math.floor(k/X.length)]+'.'+X[k%X.length];k++};m.onerror=go;go()});
-const L=[...document.querySelectorAll("nav a")],S=L.map(a=>document.querySelector(a.hash));
-addEventListener("scroll",()=>{let i=0;S.forEach((s,k)=>{if(s&&s.getBoundingClientRect().top<120)i=k});L.forEach((a,k)=>k==i?a.setAttribute("aria-current","true"):a.removeAttribute("aria-current"))},{passive:true});</script></body></html>
+
+<section class="hero">
+<p class="eyebrow">Curso livre e gratuito · para quem nunca treinou</p>
+<h1>Jiu-Jitsu para Mulheres: <span>Primeiros Passos</span></h1>
+<p class="lead">Aqui você entende o que é o jiu-jitsu, como se preparar para a primeira aula, quais são os movimentos básicos e como a prática aumenta a confiança. Técnica vale mais que força.</p>
+<div class="cta">
+<a class="btn primary" href="#unidade-1">Começar pela Unidade 1</a>
+<a class="btn" href="#roteiro">Ver o roteiro</a>
+</div>
+<figure class="photo">
+<img data-img="aula" alt="Turma sentada no tatame acompanhando a demonstração de uma técnica no início da aula de jiu-jitsu" decoding="async">
+<figcaption>Em geral, toda aula começa assim: a turma observa a demonstração da técnica do dia.</figcaption>
+</figure>
+<ul class="facts">
+<li><b>4</b> unidades curtas</li>
+<li><b>0</b> experiência necessária</li>
+<li><b>1</b> ideia central: técnica vence força</li>
+</ul>
+<div class="belts" aria-hidden="true"><i style="background:var(--b1)"></i><i style="background:var(--b2)"></i><i style="background:var(--b3)"></i><i style="background:var(--b4)"></i></div>
+</section>
+
+<section class="block" id="roteiro">
+<h2>Roteiro do curso</h2>
+<p>São quatro unidades, para estudar uma de cada vez. Cada uma tem objetivo, explicação, exemplos e exercícios com gabarito.</p>
+<div class="map">
+<a class="card u1" href="#unidade-1"><span class="badge" aria-hidden="true">1</span><h3>O que é o jiu-jitsu</h3><p>Origem, princípio da alavanca, como é uma aula, mitos e como começar com segurança.</p></a>
+<a class="card u2" href="#unidade-2"><span class="badge" aria-hidden="true">2</span><h3>Preparação</h3><p>O que levar, kimono ou sem kimono, faixas, etiqueta e cuidados com o corpo.</p></a>
+<a class="card u3" href="#unidade-3"><span class="badge" aria-hidden="true">3</span><h3>Fundamentos</h3><p>Base, ponte, fuga de quadril, guarda e quedas seguras.</p></a>
+<a class="card u4" href="#unidade-4"><span class="badge" aria-hidden="true">4</span><h3>Defesa e confiança</h3><p>Princípios de autodefesa, limites do treino e como a confiança cresce.</p></a>
+</div>
+<div class="study">
+<h3>Como estudar</h3>
+<ol>
+<li>Leia uma unidade por vez e use o índice no início dela para voltar ao que precisar.</li>
+<li>Faça os exercícios <b>antes</b> de abrir o gabarito.</li>
+<li>Anote suas dúvidas e leve ao professor: técnica se aprende presencialmente.</li>
+<li>As cores das unidades seguem a ordem das faixas: branca, azul, roxa e marrom.</li>
+</ol>
+</div>
+</section>
+
+<!-- ===================== UNIDADE 1 ===================== -->
+<section class="unit u1" id="unidade-1" aria-labelledby="t1">
+<header class="unit-head"><span class="badge" aria-hidden="true">1</span><div><p class="kicker">Unidade 1</p><h2 id="t1">O que é o jiu-jitsu e por que começar</h2></div></header>
+<p class="goal"><b>Objetivo:</b> explicar de onde vem o jiu-jitsu, qual é o princípio central da arte e quais benefícios ela traz.</p>
+<nav class="mini" aria-label="Nesta unidade"><b>Nesta unidade</b>
+<ol>
+<li><a href="#u1-origem">De onde vem</a></li>
+<li><a href="#u1-principio">Técnica vence força</a></li>
+<li><a href="#u1-aula">Como é uma aula</a></li>
+<li><a href="#u1-beneficios">Benefícios</a></li>
+<li><a href="#u1-mitos">Mitos e realidades</a></li>
+<li><a href="#u1-comecar">Como começar com segurança</a></li>
+<li><a href="#u1-ex">Exercícios</a></li>
+</ol></nav>
+
+<h3 id="u1-origem"><span class="num">1.1</span>De onde vem</h3>
+<p>O jiu-jitsu brasileiro (JJB) tem raízes no jiu-jitsu e no judô japoneses. No início do século XX, o judoca Mitsuyo Maeda veio ao Brasil e ensinou a família Gracie. Eles adaptaram as técnicas, com muita ênfase na luta no chão, e o resultado se espalhou pelo mundo.</p>
+<ol class="steps">
+<li><b>Japão.</b> O jiu-jitsu e o judô trazem técnicas de alavanca, projeção e controle do adversário.</li>
+<li><b>Brasil.</b> Maeda ensina os Gracie, que passam a treinar e testar as técnicas de forma intensa.</li>
+<li><b>Hoje.</b> O JJB é praticado em muitos países, com turmas mistas, femininas, infantis e competições para todas as idades.</li>
+</ol>
+<div class="callout practice">
+<p class="ct">Por que isso importa para você</p>
+<p>Segundo a tradição da família Gracie, as técnicas foram ajustadas para que uma pessoa menor e mais leve pudesse controlar alguém maior. Essa ideia é o que torna o jiu-jitsu acessível a quem não tem muita força no começo.</p>
+</div>
+
+<h3 id="u1-principio"><span class="num">1.2</span>Técnica vence força</h3>
+<p>O jiu-jitsu é chamado de “arte suave”. Ele usa <b>alavancas, equilíbrio e posicionamento</b> para controlar uma pessoa maior ou mais forte. Por isso combina tanto com mulheres: o foco está em entender o movimento, não em ter mais músculos.</p>
+<div class="cards">
+<div><h4>Alavanca</h4><p>Usar o corpo como ferramenta, com o apoio certo e a distância certa.</p></div>
+<div><h4>Equilíbrio</h4><p>Quem está desequilibrada perde a força. Quem tem base, mantém.</p></div>
+<div><h4>Posição</h4><p>Controlar antes de atacar: primeiro você se organiza, depois decide o próximo passo.</p></div>
+</div>
+<div class="callout example">
+<p class="ct">Exemplo: a gangorra</p>
+<p>Numa gangorra, uma criança leve consegue equilibrar um adulto mais pesado se sentar mais longe do centro. O peso não mudou. O que mudou foi a distância do ponto de apoio, e é isso que chamamos de alavanca.</p>
+<p>No tatame acontece o mesmo: ao posicionar o quadril e as pernas no lugar certo, você gasta menos energia para controlar a parceira.</p>
+</div>
+<div class="callout example">
+<p class="ct">Exemplo: a porta pesada</p>
+<p>Empurrar uma porta pesada perto das dobradiças exige muito esforço. Empurrar longe delas é fácil. Mesma porta, mesma força, resultado diferente por causa da posição.</p>
+</div>
+
+<h3 id="u1-aula"><span class="num">1.3</span>Como é uma aula</h3>
+<p>O formato muda de academia para academia, mas muitas aulas seguem esta ordem. A duração costuma ficar entre 60 e 90 minutos.</p>
+<ol class="steps">
+<li><b>Aquecimento</b> (cerca de 10 min). Movimentos leves de solo, mobilidade e corrida curta.</li>
+<li><b>Técnica do dia</b> (cerca de 20 min). O professor demonstra e você repete com uma parceira, devagar.</li>
+<li><b>Treino repetido</b> (cerca de 15 min). Você repete a técnica várias vezes, com a parceira cooperando cada vez menos.</li>
+<li><b>Rolamento</b> (cerca de 10 min). É o treino livre: você aplica o que aprendeu com resistência controlada. No começo, é normal pedir para ir mais devagar.</li>
+<li><b>Alongamento e cumprimento final</b> (cerca de 5 min). A turma desacelera e agradece.</li>
+</ol>
+<div class="callout practice">
+<p class="ct">O “tapa”</p>
+<p>Quando a parceira bate na sua pele ou no tatame (ou diz “pare”), o movimento para na hora. Isso vale para os dois lados: você pode bater quando quiser parar, e deve soltar imediatamente quando a parceira bater. É a regra mais importante do treino.</p>
+</div>
+
+<h3 id="u1-beneficios"><span class="num">1.4</span>Benefícios</h3>
+<div class="cards">
+<div><h4>Corpo</h4><p>Condicionamento, flexibilidade, coordenação e equilíbrio, tudo trabalhado ao mesmo tempo.</p></div>
+<div><h4>Mente</h4><p>Foco, disciplina e calma diante de situações difíceis. Cada aula é um bom “respiro” da rotina.</p></div>
+<div><h4>Segurança</h4><p>Noções de autodefesa e mais consciência sobre espaço, distância e postura.</p></div>
+<div><h4>Comunidade</h4><p>Uma turma que treina junto, se apoia e comemora cada conquista, da primeira aula à troca de faixa.</p></div>
+</div>
+
+<h3 id="u1-mitos"><span class="num">1.5</span>Mitos e realidades</h3>
+<div class="scroll"><table>
+<tr><th>Mito</th><th>Realidade</th></tr>
+<tr><td>“Preciso ser forte.”</td><td>A força vem com o treino. No começo, o que importa é a técnica e a posição.</td></tr>
+<tr><td>“Preciso estar em forma.”</td><td>Ninguém começa em forma. O treino evolui com você, e você pode ir no seu ritmo.</td></tr>
+<tr><td>“Preciso ser flexível.”</td><td>A flexibilidade melhora com o tempo. Muita gente começa bem “durinha”.</td></tr>
+<tr><td>“É violento.”</td><td>Bem orientado, é um treino controlado, com regras e respeito. O tapa existe justamente para parar tudo.</td></tr>
+<tr><td>“Vou ser a única mulher na turma.”</td><td>Muitas academias têm turmas femininas ou várias alunas. Pergunte antes da aula experimental.</td></tr>
+<tr><td>“Tenho vergonha do contato.”</td><td>É comum no início. Você pode conversar com o professor, pedir para treinar com uma colega e avisar quando algo incomodar.</td></tr>
+</table></div>
+<div class="callout example">
+<p class="ct">Exemplo ilustrativo</p>
+<p>Imagine a Marina, que nunca fez esporte de contato e acha que “não tem força”. Na primeira aula ela aprende dois movimentos de solo, treina devagar com uma colega e percebe que o movimento nasce do quadril, não dos braços. Duas semanas depois, já repete sozinha o aquecimento. O que mudou não foi a força, foi o entendimento.</p>
+</div>
+
+<h3 id="u1-comecar"><span class="num">1.6</span>Como começar com segurança</h3>
+<p>Procure uma academia com professor qualificado, faça uma aula experimental e avise sobre lesões ou condições de saúde. Na hora de escolher, observe:</p>
+<ul>
+<li>O professor explica com clareza e corrige com respeito?</li>
+<li>Existe turma para iniciantes ou turma feminina?</li>
+<li>O tatame e o ambiente estão limpos e organizados?</li>
+<li>As pessoas se tratam bem e respeitam o tapa?</li>
+</ul>
+<div class="callout practice">
+<p class="ct">Perguntas para fazer na academia</p>
+<ul>
+<li>A primeira aula é gratuita ou experimental?</li>
+<li>Quais são os horários da turma de iniciantes?</li>
+<li>Vocês têm turma feminina ou horário com várias alunas?</li>
+<li>Preciso levar kimono ou posso usar um emprestado?</li>
+</ul>
+</div>
+<p>Este conteúdo é introdutório e não substitui a orientação presencial.</p>
+
+<div class="ex" id="u1-ex">
+<h3>Exercícios da Unidade 1</h3>
+<p class="hint">Responda primeiro, sem olhar. Depois abra o gabarito.</p>
+<ol>
+<li><span class="tag">Revise</span>Qual é o princípio central do jiu-jitsu?
+<details><summary>Ver resposta</summary><div><p>Técnica vence força: usar alavanca, equilíbrio e posição para controlar uma pessoa maior ou mais forte.</p></div></details></li>
+<li><span class="tag">Revise</span>Cite dois benefícios da prática.
+<details><summary>Ver resposta</summary><div><p>Qualquer dois entre: condicionamento físico, flexibilidade, coordenação, noções de autodefesa, disciplina, foco, confiança e comunidade de treino.</p></div></details></li>
+<li><span class="tag">Revise</span>O que significa o “tapa” no treino?
+<details><summary>Ver resposta</summary><div><p>É o sinal para parar na hora. Pode ser uma batida na parceira ou no tatame, ou dizer “pare”. Deve ser sempre respeitado.</p></div></details></li>
+<li><span class="tag">Verdadeiro ou falso</span>“Para começar, é preciso estar em forma e ser forte.”
+<details><summary>Ver resposta</summary><div><p>Falso. Ninguém começa em forma, e no início a técnica importa mais que a força.</p></div></details></li>
+<li><span class="tag">Pense e responda</span>Quais três perguntas você faria a uma academia antes da aula experimental?
+<details><summary>Ver exemplo</summary><div><p>Resposta pessoal. Exemplos: existe turma de iniciantes? Há turma feminina? Preciso levar kimono?</p></div></details></li>
+</ol>
+</div>
+<div class="pager"><span></span><a class="btn" href="#unidade-2">Próxima: Unidade 2 →</a></div>
+</section>
+
+<!-- ===================== UNIDADE 2 ===================== -->
+<section class="unit u2" id="unidade-2" aria-labelledby="t2">
+<header class="unit-head"><span class="badge" aria-hidden="true">2</span><div><p class="kicker">Unidade 2</p><h2 id="t2">Preparação: roupa, faixas, etiqueta e cuidados</h2></div></header>
+<p class="goal"><b>Objetivo:</b> saber o que levar ao primeiro treino, entender o sistema de faixas e conhecer as regras básicas de convivência no tatame.</p>
+<nav class="mini" aria-label="Nesta unidade"><b>Nesta unidade</b>
+<ol>
+<li><a href="#u2-levar">O que levar</a></li>
+<li><a href="#u2-gi">Com ou sem kimono</a></li>
+<li><a href="#u2-faixas">As faixas</a></li>
+<li><a href="#u2-etiqueta">Etiqueta no tatame</a></li>
+<li><a href="#u2-corpo">Cuidados com o corpo</a></li>
+<li><a href="#u2-ex">Exercícios</a></li>
+</ol></nav>
+
+<h3 id="u2-levar"><span class="num">2.1</span>O que levar ao primeiro treino</h3>
+<figure class="photo">
+<img data-img="roupa-e-faixa" alt="Kimono dobrado com a faixa e um par de chinelos sobre o tatame" loading="lazy" decoding="async">
+<figcaption>Kimono, faixa e chinelo: o básico para pisar no tatame.</figcaption>
+</figure>
+<p>No jiu-jitsu com <b>kimono</b> (gi), a roupa é um conjunto de casaco, calça e faixa, que costuma ser emprestado ou vendido na academia. Na aula experimental, pergunte o que ela pede. Use a lista abaixo para montar a bolsa:</p>
+<ul class="check">
+<li><label><input type="checkbox"> Garrafa de água</label></li>
+<li><label><input type="checkbox"> Toalha pequena</label></li>
+<li><label><input type="checkbox"> Chinelo para andar fora do tatame</label></li>
+<li><label><input type="checkbox"> Elástico ou presilha de cabelo</label></li>
+<li><label><input type="checkbox"> Top esportivo firme e camiseta justa por baixo do kimono</label></li>
+<li><label><input type="checkbox"> Kimono (próprio ou emprestado)</label></li>
+<li><label><input type="checkbox"> Roupa para trocar e saco para a roupa suja</label></li>
+<li><label><input type="checkbox"> Unhas das mãos e dos pés curtas</label></li>
+</ul>
+
+<h3 id="u2-gi"><span class="num">2.2</span>Com ou sem kimono</h3>
+<div class="scroll"><table>
+<tr><th>Aspecto</th><th>Com kimono (gi)</th><th>Sem kimono (no-gi)</th></tr>
+<tr><td>Roupa</td><td>Casaco, calça e faixa.</td><td>Camiseta justa e bermuda ou legging, sem bolsos e sem zíper.</td></tr>
+<tr><td>Pegadas</td><td>O tecido (gola, manga, calça) serve de apoio para segurar.</td><td>O controle vem do corpo: braços, pescoço e quadril. Com suor, escorrega mais.</td></tr>
+<tr><td>Ritmo</td><td>Costuma ser mais lento e estratégico.</td><td>Costuma ser mais rápido e dinâmico.</td></tr>
+<tr><td>Para quem começa</td><td>Muitas academias iniciam por aqui.</td><td>Também pode ser uma boa porta de entrada. Pergunte à academia.</td></tr>
+</table></div>
+
+<h3 id="u2-faixas"><span class="num">2.3</span>As faixas</h3>
+<p>Para adultos, a ordem é: <b>branca, azul, roxa, marrom e preta</b>. Os “graus” são listras na ponta preta da faixa; em geral, cada faixa tem até quatro graus antes da próxima. A progressão é lenta de propósito: cada faixa mostra anos de aprendizado, e começar na branca é o normal para todo mundo.</p>
+<ul class="belt-row" aria-label="Faixas dos adultos">
+<li><i style="background:var(--b1)"></i>branca</li>
+<li><i style="background:var(--b2)"></i>azul</li>
+<li><i style="background:var(--b3)"></i>roxa</li>
+<li><i style="background:var(--b4)"></i>marrom</li>
+<li><i style="background:#111"></i>preta</li>
+</ul>
+<div class="callout example">
+<p class="ct">Exemplo: como ler uma faixa</p>
+<div class="belt" role="img" aria-label="Faixa azul com dois graus, representados por duas listras brancas na ponta preta"><div class="tip"><i></i><i></i></div></div>
+<p>Faixa azul com dois graus: a praticante já passou pela faixa branca e recebeu duas listras na faixa azul.</p>
+</div>
+<p>Troca de faixa e de grau depende da presença, do aprendizado e da avaliação do professor. Não é uma corrida.</p>
+
+<h3 id="u2-etiqueta"><span class="num">2.4</span>Etiqueta no tatame</h3>
+<figure class="photo">
+<img data-img="cumprimento" alt="Duas pessoas de kimono se cumprimentando com uma reverência no tatame" loading="lazy" decoding="async">
+<figcaption>O cumprimento é parte do treino, no começo e no fim.</figcaption>
+</figure>
+<div class="scroll"><table>
+<tr><th>Regra</th><th>Por quê</th></tr>
+<tr><td>Unhas curtas e cabelo preso.</td><td>Evita arranhões e cabelo preso nos dedos ou no kimono.</td></tr>
+<tr><td>Sem anéis, brincos, colares ou relógio.</td><td>Objetos podem machucar você e a parceira.</td></tr>
+<tr><td>Kimono limpo e chinelo fora do tatame.</td><td>Higiene evita infecções de pele e deixa o ambiente agradável.</td></tr>
+<tr><td>Cumprimente a turma e o professor.</td><td>Mostra respeito e cria o clima de cooperação.</td></tr>
+<tr><td>Respeite sempre o “tapa”.</td><td>É a regra de segurança número um.</td></tr>
+<tr><td>Diga à parceira se algo incomodar.</td><td>Treinar é cooperar, e todo mundo quer voltar inteira para casa.</td></tr>
+</table></div>
+<div class="callout example">
+<p class="ct">Exemplo: antes do rolamento</p>
+<p>Em geral, as duas se cumprimentam com um aperto de mão e um toque de punhos. Se a parceira está apertando mais do que você consegue aguentar, você pode dizer “mais leve, por favor”. Isso faz parte do jogo.</p>
+</div>
+
+<h3 id="u2-corpo"><span class="num">2.5</span>Cuidados com o corpo</h3>
+<div class="cards">
+<div><h4>Antes</h4><p>Faça o aquecimento, beba água e evite treinar com o estômago muito cheio.</p></div>
+<div><h4>Durante</h4><p>Respire, vá no seu ritmo, use o tapa e fale quando algo incomodar.</p></div>
+<div><h4>Depois</h4><p>Alongue, hidrate-se, descanse e observe como o corpo responde nos dias seguintes.</p></div>
+</div>
+<p>Avise o professor sobre <b>dor, lesão, cirurgia, gravidez</b> ou qualquer condição de saúde. Se estiver grávida ou suspeitar que esteja, converse com seu médico antes de treinar. Sobre o ciclo menstrual, a regra é ouvir o corpo: escolha a proteção que lhe deixe confortável e faça pausas se precisar.</p>
+<div class="callout warn">
+<p class="ct">Quando parar</p>
+<p>Pare e avise o professor se sentir <b>dor aguda</b>, tontura ou falta de ar fora do normal. Em caso de dor no peito, procure atendimento médico. Dúvidas de saúde? Converse com um médico antes de começar.</p>
+</div>
+<div class="callout example dialog">
+<p class="ct">Exemplo de conversa</p>
+<p><span class="sp">Aluna:</span> Professor, antes de começar: operei o joelho direito há dois anos.</p>
+<p><span class="sp">Professor:</span> Obrigado por avisar. Hoje você faz o aquecimento e os movimentos sem torção no joelho, e a gente adapta o resto.</p>
+<p><span class="sp">Aluna:</span> Combinado. Se doer, eu aviso na hora.</p>
+</div>
+
+<div class="ex" id="u2-ex">
+<h3>Exercícios da Unidade 2</h3>
+<p class="hint">Responda primeiro, sem olhar. Depois abra o gabarito.</p>
+<ol>
+<li><span class="tag">Revise</span>Qual é a ordem das faixas para adultos?
+<details><summary>Ver resposta</summary><div><p>Branca, azul, roxa, marrom e preta.</p></div></details></li>
+<li><span class="tag">Revise</span>Cite três regras de etiqueta no tatame e o motivo de cada uma.
+<details><summary>Ver resposta</summary><div><p>Exemplos: unhas curtas (evita arranhões); sem joias (evita machucar); respeitar o tapa (é a regra de segurança); kimono limpo (higiene).</p></div></details></li>
+<li><span class="tag">Revise</span>Por que avisar o professor sobre lesões?
+<details><summary>Ver resposta</summary><div><p>Para que ele adapte a aula e evite movimentos que possam agravar a lesão.</p></div></details></li>
+<li><span class="tag">Verdadeiro ou falso</span>“No treino sem kimono, pode-se usar bermuda com bolsos e zíper.”
+<details><summary>Ver resposta</summary><div><p>Falso. Bolsos e zíper podem machucar ou prender, por isso a roupa deve ser sem bolsos e sem zíper.</p></div></details></li>
+<li><span class="tag">Pense e responda</span>Monte a sua lista de itens para a primeira aula.
+<details><summary>Ver exemplo</summary><div><p>Resposta pessoal. Exemplo: água, toalha, chinelo, elástico de cabelo, roupa para trocar e kimono emprestado.</p></div></details></li>
+</ol>
+</div>
+<div class="pager"><a class="btn" href="#unidade-1">← Unidade 1</a><a class="btn" href="#unidade-3">Próxima: Unidade 3 →</a></div>
+</section>
+
+<!-- ===================== UNIDADE 3 ===================== -->
+<section class="unit u3" id="unidade-3" aria-labelledby="t3">
+<header class="unit-head"><span class="badge" aria-hidden="true">3</span><div><p class="kicker">Unidade 3</p><h2 id="t3">Fundamentos: postura, solo e quedas seguras</h2></div></header>
+<p class="goal"><b>Objetivo:</b> reconhecer os movimentos básicos que sustentam todo o jiu-jitsu e entender como cair com segurança.</p>
+<div class="callout warn"><p class="ct">Atenção</p><p>As técnicas devem ser aprendidas <b>com um professor</b>. Aqui você conhece a ideia de cada movimento, não um passo a passo para treinar sozinha.</p></div>
+<nav class="mini" aria-label="Nesta unidade"><b>Nesta unidade</b>
+<ol>
+<li><a href="#u3-base">Postura e base</a></li>
+<li><a href="#u3-ponte">A ponte</a></li>
+<li><a href="#u3-fuga">Fuga de quadril</a></li>
+<li><a href="#u3-guarda">A guarda</a></li>
+<li><a href="#u3-quedas">Quedas seguras</a></li>
+<li><a href="#u3-aquec">Aquecimento de solo</a></li>
+<li><a href="#u3-ex">Exercícios</a></li>
+</ol></nav>
+
+<h3 id="u3-base"><span class="num">3.1</span>Postura e base</h3>
+<p>Uma boa base é ter os pés afastados, os joelhos levemente flexionados, a coluna firme e o centro de gravidade baixo. Quem tem base é difícil de desequilibrar. Quase todo movimento do jiu-jitsu começa por ela.</p>
+<div class="cards">
+<div><h4>Pés</h4><p>Afastados na largura dos ombros ou um pouco mais.</p></div>
+<div><h4>Joelhos</h4><p>Levemente dobrados, nunca travados.</p></div>
+<div><h4>Coluna</h4><p>Firme e alinhada, sem curvar para a frente.</p></div>
+</div>
+<div class="callout practice">
+<p class="ct">Experimento rápido</p>
+<p>Com uma amiga e um espaço livre, fique de pé com os pés juntos e peça para ela empurrar seu ombro, de leve. Agora afaste os pés, dobre os joelhos e abaixe o quadril, e repita. Você vai sentir que é bem mais difícil ser desequilibrada.</p>
+</div>
+
+<h3 id="u3-ponte"><span class="num">3.2</span>A ponte</h3>
+<figure class="photo">
+<img data-img="ponte" alt="Praticante de costas no tatame elevando o quadril em uma ponte, com a parceira por cima" loading="lazy" decoding="async">
+<figcaption>A ponte: o quadril sobe e cria espaço.</figcaption>
+</figure>
+<p><b>Para que serve:</b> deitada de costas, você eleva o quadril do chão. Serve para sair de baixo de uma pessoa e criar espaço.</p>
+<ol class="steps">
+<li>Deite de costas, com os joelhos dobrados e os pés firmes no chão.</li>
+<li>Empurre o chão com os pés e leve o quadril para cima.</li>
+<li>Volte devagar ao chão, sem deixar o quadril cair de uma vez.</li>
+</ol>
+<p><b>Erro comum:</b> empurrar só com os braços ou apoiar o peso na cabeça e no pescoço. O movimento vem das pernas e do quadril.</p>
+<div class="callout example">
+<p class="ct">Exemplo de uso</p>
+<p>Uma pessoa mais pesada está por cima de você. Ao subir o quadril, você cria um pequeno espaço, e é nesse espaço que entra o próximo movimento: a fuga de quadril.</p>
+</div>
+
+<h3 id="u3-fuga"><span class="num">3.3</span>Fuga de quadril</h3>
+<figure class="photo">
+<img data-img="fuga-de-quadril" alt="Praticante no tatame deslizando o quadril para o lado em uma fuga de quadril" loading="lazy" decoding="async">
+<figcaption>Fuga de quadril: afastar o quadril para ganhar distância.</figcaption>
+</figure>
+<p><b>Para que serve:</b> deslizando o quadril para o lado, você afasta o corpo e cria distância. Em inglês, é chamada de <i>shrimp</i>.</p>
+<ol class="steps">
+<li>Deite de costas, com os pés apoiados no chão.</li>
+<li>Empurre com um dos pés e deslize o quadril para o lado, para longe da parceira.</li>
+<li>Vire levemente de lado, apoie e volte para o centro. Repita para o outro lado.</li>
+</ol>
+<p><b>Erro comum:</b> arrastar o corpo só com os braços. É o quadril que se move primeiro.</p>
+<div class="callout example">
+<p class="ct">Exemplo de uso</p>
+<p>Depois de criar espaço com a ponte, a fuga de quadril afasta o corpo o suficiente para colocar as pernas na frente da parceira, que é a guarda.</p>
+</div>
+
+<h3 id="u3-guarda"><span class="num">3.4</span>A guarda</h3>
+<figure class="photo">
+<img data-img="controlar-distancia|ontrolar-distancia" alt="Praticante de costas usando as pernas para controlar a distância da parceira" loading="lazy" decoding="async">
+<figcaption>Da guarda, as pernas controlam a distância entre as duas.</figcaption>
+</figure>
+<p><b>Para que serve:</b> de costas, você usa as pernas para controlar a distância da parceira. É o ponto forte de quem é menor, porque as pernas são mais fortes que os braços.</p>
+<div class="cards">
+<div><h4>Guarda fechada</h4><p>As pernas ficam cruzadas ao redor da cintura da parceira, o que limita os movimentos dela.</p></div>
+<div><h4>Guarda aberta</h4><p>Os pés apoiam nos quadris ou nos braços da parceira para manter a distância.</p></div>
+</div>
+<p>Todos os movimentos de solo usam o <b>quadril</b>, que é o centro do jiu-jitsu, e não a força dos braços.</p>
+
+<h3 id="u3-quedas"><span class="num">3.5</span>Quedas seguras</h3>
+<figure class="photo">
+<img data-img="queda-segura" alt="Praticante caindo no tatame com o corpo arredondado em uma queda segura" loading="lazy" decoding="async">
+<figcaption>Queda segura: corpo arredondado e queixo no peito.</figcaption>
+</figure>
+<p>Cair faz parte do treino, e saber cair evita lesões. Os princípios são:</p>
+<ul>
+<li><b>Queixo no peito</b> para proteger a cabeça.</li>
+<li><b>Corpo arredondado</b>, como uma bola.</li>
+<li><b>Bater o braço no chão</b> para dividir o impacto.</li>
+<li><b>Soltar o ar</b> ao cair, sem prender a respiração.</li>
+</ul>
+<div class="callout warn"><p class="ct">O que evitar</p><p>Nunca tente segurar a queda apoiando o corpo na mão aberta ou no cotovelo esticado. É assim que punhos e cotovelos se machucam.</p></div>
+<p>Treine as quedas devagar e com o professor, seguindo uma progressão:</p>
+<ol class="steps">
+<li><b>Deitada:</b> pratique só o movimento de bater o braço no chão.</li>
+<li><b>Agachada:</b> deixe o corpo cair de lado, com o queixo no peito.</li>
+<li><b>Em pé:</b> só depois, e sempre com orientação do professor.</li>
+</ol>
+
+<h3 id="u3-aquec"><span class="num">3.6</span>Aquecimento de solo</h3>
+<p>Estes movimentos ajudam a se familiarizar com o corpo no chão. Faça devagar, em uma superfície macia, e pare se sentir dor.</p>
+<div class="scroll"><table>
+<tr><th>Movimento</th><th>Quanto</th><th>O que treina</th></tr>
+<tr><td>Ponte</td><td>5 repetições</td><td>Elevar o quadril</td></tr>
+<tr><td>Fuga de quadril</td><td>5 repetições para cada lado</td><td>Mover o quadril de lado</td></tr>
+<tr><td>Agachamento</td><td>8 repetições</td><td>Base e pernas</td></tr>
+<tr><td>Prancha</td><td>20 segundos</td><td>Firmeza do tronco</td></tr>
+</table></div>
+
+<div class="ex" id="u3-ex">
+<h3>Exercícios da Unidade 3</h3>
+<p class="hint">Responda primeiro, sem olhar. Depois abra o gabarito.</p>
+<ol>
+<li><span class="tag">Revise</span>Qual parte do corpo é central nos movimentos de solo?
+<details><summary>Ver resposta</summary><div><p>O quadril.</p></div></details></li>
+<li><span class="tag">Revise</span>Para que serve a ponte?
+<details><summary>Ver resposta</summary><div><p>Para sair de baixo de uma pessoa e criar espaço, elevando o quadril.</p></div></details></li>
+<li><span class="tag">Revise</span>Cite dois cuidados ao cair.
+<details><summary>Ver resposta</summary><div><p>Queixo no peito, corpo arredondado, bater o braço no chão e soltar o ar. Não apoiar a queda na mão aberta ou no cotovelo esticado.</p></div></details></li>
+<li><span class="tag">Relacione</span>Ligue cada movimento à sua função: ponte, fuga de quadril, guarda. (a) afastar o quadril; (b) controlar a distância com as pernas; (c) elevar o quadril.
+<details><summary>Ver resposta</summary><div><p>Ponte: (c). Fuga de quadril: (a). Guarda: (b).</p></div></details></li>
+<li><span class="tag">Verdadeiro ou falso</span>“Ao cair, o certo é esticar o cotovelo e apoiar a mão aberta.”
+<details><summary>Ver resposta</summary><div><p>Falso. Isso pode machucar punho e cotovelo. O correto é arredondar o corpo e bater o braço no chão.</p></div></details></li>
+</ol>
+</div>
+<div class="pager"><a class="btn" href="#unidade-2">← Unidade 2</a><a class="btn" href="#unidade-4">Próxima: Unidade 4 →</a></div>
+</section>
+
+<!-- ===================== UNIDADE 4 ===================== -->
+<section class="unit u4" id="unidade-4" aria-labelledby="t4">
+<header class="unit-head"><span class="badge" aria-hidden="true">4</span><div><p class="kicker">Unidade 4</p><h2 id="t4">Defesa pessoal e confiança</h2></div></header>
+<p class="goal"><b>Objetivo:</b> compreender os princípios de autodefesa que o jiu-jitsu desenvolve e como isso se liga à confiança.</p>
+<nav class="mini" aria-label="Nesta unidade"><b>Nesta unidade</b>
+<ol>
+<li><a href="#u4-principios">Princípios, não truques</a></li>
+<li><a href="#u4-escada">A escada de respostas</a></li>
+<li><a href="#u4-limites">Treino e realidade</a></li>
+<li><a href="#u4-confianca">Confiança</a></li>
+<li><a href="#u4-ex">Exercícios</a></li>
+</ol></nav>
+
+<h3 id="u4-principios"><span class="num">4.1</span>Princípios, não truques</h3>
+<figure class="photo">
+<img data-img="espaco-e-base" alt="Duas praticantes de pé, uma de frente para a outra, mantendo distância e base" loading="lazy" decoding="async">
+<figcaption>Distância e base: o início de qualquer resposta.</figcaption>
+</figure>
+<p>Não existe golpe mágico. O que o treino dá é um conjunto de habilidades que funcionam juntas:</p>
+<div class="cards">
+<div><h4>Atenção ao ambiente</h4><p>Evitar o risco vale mais que vencer um conflito. Exemplo: escolher um caminho iluminado e avisar alguém de confiança do seu trajeto.</p></div>
+<div><h4>Distância e base</h4><p>Manter espaço e equilíbrio. Exemplo: se alguém chega perto demais, dê um passo atrás e mantenha a base.</p></div>
+<div><h4>Calma sob pressão</h4><p>Quem já esteve em posições difíceis no treino aprende a respirar e pensar.</p></div>
+<div><h4>Objetivo de escapar</h4><p>O foco é criar uma oportunidade para sair e pedir ajuda, não lutar.</p></div>
+</div>
+<div class="callout practice">
+<p class="ct">Exercício de calma</p>
+<p>Inspire pelo nariz contando até 4 e solte o ar pela boca contando até 6. Repita três vezes. Quanto mais você treina a respiração, mais fácil é manter a calma em momentos tensos.</p>
+</div>
+<div class="callout warn"><p class="ct">Importante</p><p>Nada disso significa que a responsabilidade seja de quem sofre uma agressão. A responsabilidade é sempre de quem agride.</p></div>
+
+<h3 id="u4-escada"><span class="num">4.2</span>A escada de respostas</h3>
+<p>Uma defesa pessoal bem pensada tem etapas. A técnica fica por último.</p>
+<ol class="steps">
+<li><b>Prevenir.</b> Perceba o incômodo cedo e evite o risco.</li>
+<li><b>Impor limite.</b> Use voz firme e postura segura: “Pare. Afaste-se.”</li>
+<li><b>Sair e pedir ajuda.</b> Afaste-se, vá para um lugar com gente, grite ou ligue para o 190.</li>
+<li><b>Criar espaço.</b> Se houver contato físico, use base e movimentos de quadril para abrir distância e fugir.</li>
+</ol>
+<div class="callout example">
+<p class="ct">Exemplo</p>
+<p>No ponto de ônibus, um desconhecido insiste em conversar e chega muito perto. Passo 1: você percebe o incômodo. Passo 2: diz “Não quero conversar. Afaste-se.” Passo 3: se ele continuar, você anda até uma loja aberta ou um grupo de pessoas e pede ajuda. A técnica nem chegou a ser necessária.</p>
+</div>
+
+<h3 id="u4-limites"><span class="num">4.3</span>Treino e realidade: os limites</h3>
+<p>O jiu-jitsu ajuda, mas não garante proteção em qualquer situação. Treinar com regularidade e orientação faz diferença.</p>
+<div class="scroll"><table>
+<tr><th>No treino</th><th>Na rua</th></tr>
+<tr><td>A parceira coopera e respeita o tapa.</td><td>Um agressor não respeita limite nenhum.</td></tr>
+<tr><td>Ambiente e regras controlados.</td><td>Situação imprevisível, às vezes com mais de uma pessoa.</td></tr>
+<tr><td>O objetivo é aprender.</td><td>O objetivo é escapar com segurança.</td></tr>
+</table></div>
+<div class="callout warn">
+<p class="ct">Se você está em risco</p>
+<p>Em risco real, afastar-se e buscar ajuda é sempre a melhor escolha. Em emergência, ligue 190. Para orientação e denúncia de violência contra a mulher, ligue 180 (Central de Atendimento à Mulher, gratuito).</p>
+</div>
+
+<h3 id="u4-confianca"><span class="num">4.4</span>Confiança</h3>
+<figure class="photo">
+<img data-img="confianca" alt="Grupo de alunas de kimono sorrindo juntas no tatame" loading="lazy" decoding="async">
+<figcaption>A turma também faz parte da confiança: ninguém treina sozinha.</figcaption>
+</figure>
+<p>Com o tempo, o corpo aprende que é capaz de resolver problemas. Muitas alunas relatam mais segurança, postura e disciplina também fora do tatame. Esse efeito varia de pessoa para pessoa e vem da prática constante.</p>
+<p>A confiança cresce em pequenas vitórias. Alguns marcos possíveis:</p>
+<ul>
+<li>Terminar a primeira aula.</li>
+<li>Pedir para ir mais devagar quando precisa.</li>
+<li>Repetir um movimento sem olhar para o professor.</li>
+<li>Pedir ajuda a uma colega e ajudar outra de volta.</li>
+</ul>
+<div class="callout practice">
+<p class="ct">Diário de treino</p>
+<p>Depois de cada aula, escreva em três linhas:</p>
+<ol>
+<li>Hoje eu aprendi…</li>
+<li>Minha dúvida para o professor é…</li>
+<li>Minha pequena vitória foi…</li>
+</ol>
+</div>
+
+<div class="ex" id="u4-ex">
+<h3>Exercícios da Unidade 4</h3>
+<p class="hint">Responda primeiro, sem olhar. Depois abra o gabarito.</p>
+<ol>
+<li><span class="tag">Revise</span>Por que “princípios” são mais úteis que “truques”?
+<details><summary>Ver resposta</summary><div><p>Porque os princípios (atenção, distância, base, calma) funcionam em muitas situações, enquanto um truque só serve em uma situação específica.</p></div></details></li>
+<li><span class="tag">Revise</span>Qual é o objetivo de uma defesa pessoal bem pensada?
+<details><summary>Ver resposta</summary><div><p>Criar uma oportunidade de escapar e pedir ajuda, não lutar.</p></div></details></li>
+<li><span class="tag">Revise</span>Como o treino pode aumentar a confiança?
+<details><summary>Ver resposta</summary><div><p>Por pequenas conquistas, pela prática de lidar com o desconforto, pela postura e pelo apoio da turma.</p></div></details></li>
+<li><span class="tag">Ordene</span>Coloque na ordem as etapas: (a) criar espaço, (b) prevenir, (c) sair e pedir ajuda, (d) impor limite.
+<details><summary>Ver resposta</summary><div><p>(b) prevenir, (d) impor limite, (c) sair e pedir ajuda, (a) criar espaço.</p></div></details></li>
+<li><span class="tag">Verdadeiro ou falso</span>“Quem treina jiu-jitsu está protegida em qualquer situação.”
+<details><summary>Ver resposta</summary><div><p>Falso. O treino ajuda, mas não garante proteção. Em risco real, afastar-se e buscar ajuda é a melhor escolha.</p></div></details></li>
+</ol>
+</div>
+<div class="pager"><a class="btn" href="#unidade-3">← Unidade 3</a><a class="btn primary" href="#resumo">Ir ao resumo →</a></div>
+</section>
+
+<!-- ===================== RESUMO ===================== -->
+<section class="block" id="resumo">
+<h2>Resumo do curso</h2>
+<div class="infographic">
+<svg viewBox="0 0 700 430" role="img" aria-label="Infográfico: técnica vence força, com três pilares e as faixas de adultos">
+<rect x="0" y="0" width="700" height="430" rx="14" fill="var(--surface)"/>
+<text x="350" y="50" text-anchor="middle" font-size="26" font-weight="800" fill="var(--ink)" font-family="Bricolage Grotesque,system-ui,sans-serif">Técnica vence força</text>
+<g font-family="Source Sans 3,system-ui,sans-serif" text-anchor="middle" fill="var(--ink)">
+<rect x="40" y="80" width="190" height="130" rx="10" fill="none" stroke="var(--accent)" stroke-width="3"/>
+<text x="135" y="125" font-size="22" font-weight="700">Alavanca</text>
+<text x="135" y="155" font-size="15" fill="var(--text)">usar o corpo como</text>
+<text x="135" y="176" font-size="15" fill="var(--text)">ferramenta</text>
+<rect x="255" y="80" width="190" height="130" rx="10" fill="none" stroke="var(--accent)" stroke-width="3"/>
+<text x="350" y="125" font-size="22" font-weight="700">Equilíbrio</text>
+<text x="350" y="155" font-size="15" fill="var(--text)">base firme e</text>
+<text x="350" y="176" font-size="15" fill="var(--text)">centro baixo</text>
+<rect x="470" y="80" width="190" height="130" rx="10" fill="none" stroke="var(--accent)" stroke-width="3"/>
+<text x="565" y="125" font-size="22" font-weight="700">Posição</text>
+<text x="565" y="155" font-size="15" fill="var(--text)">controlar antes de</text>
+<text x="565" y="176" font-size="15" fill="var(--text)">atacar</text>
+<text x="350" y="260" font-size="19" font-weight="700">As faixas dos adultos</text>
+<rect x="40" y="280" width="112" height="34" rx="6" fill="var(--b1)" stroke="var(--line)"/>
+<rect x="164" y="280" width="112" height="34" rx="6" fill="var(--b2)"/>
+<rect x="288" y="280" width="112" height="34" rx="6" fill="var(--b3)"/>
+<rect x="412" y="280" width="112" height="34" rx="6" fill="var(--b4)"/>
+<rect x="536" y="280" width="124" height="34" rx="6" fill="#111" stroke="var(--line)"/>
+<text x="96" y="338" font-size="15" fill="var(--text)">branca</text>
+<text x="220" y="338" font-size="15" fill="var(--text)">azul</text>
+<text x="344" y="338" font-size="15" fill="var(--text)">roxa</text>
+<text x="468" y="338" font-size="15" fill="var(--text)">marrom</text>
+<text x="598" y="338" font-size="15" fill="var(--text)">preta</text>
+<text x="350" y="385" font-size="16" fill="var(--text)">Antes de treinar: avise o professor sobre lesões, hidrate-se e respeite o tapa.</text>
+</g></svg>
+</div>
+<div class="study">
+<h3>Seus próximos passos</h3>
+<ol>
+<li>Pesquise duas ou três academias perto de você e veja os horários da turma de iniciantes.</li>
+<li>Entre em contato e pergunte sobre a aula experimental e a turma feminina.</li>
+<li>Monte a bolsa com a lista da Unidade 2.</li>
+<li>Faça a aula experimental e avise sobre lesões ou condições de saúde.</li>
+<li>Depois da aula, preencha o diário de treino da Unidade 4.</li>
+</ol>
+</div>
+</section>
+
+<section class="block" id="videos">
+<h2>Vídeos para aprofundar</h2>
+<p>Vídeos de outros canais do YouTube para complementar o estudo. Os créditos são de cada canal.</p>
+<div class="videos">
+<a href="https://www.youtube.com/shorts/qN0bBfr9Mnw" target="_blank" rel="noopener"><b>4 dicas para mulheres iniciantes</b><span>Canal: Diogo Almeida JJ</span></a>
+<a href="https://www.youtube.com/shorts/hJOnBk82Mog" target="_blank" rel="noopener"><b>Graduação de faixas infantil</b><span>Canal: Jiujitsufamiliaiala</span></a>
+<a href="https://www.youtube.com/shorts/nel1Gf6B7Bs" target="_blank" rel="noopener"><b>3 quedas para evoluir</b><span>Canal: Leonardo Henrique</span></a>
+</div>
+<p style="color:var(--muted);font-size:.95rem">Obs.: o vídeo sobre faixas mostra o sistema infantil, que é diferente do adulto apresentado na Unidade 2.</p>
+</section>
+
+<footer>
+<p>Conteúdo introdutório. Não substitui a orientação de um professor qualificado nem de um profissional de saúde.</p>
+<p>Em risco ou emergência, ligue 190. Violência contra a mulher: Ligue 180.</p>
+<p><a href="#topo">Voltar ao topo ↑</a></p>
+</footer>
+
+</div>
+</main>
+
+<script>
+(function(){
+  /* Fotos: tenta as extensões mais comuns; se nenhuma existir, esconde a figura. */
+  var exts=['jpg','jpeg','png','webp','avif','JPG','JPEG','PNG'];
+  document.querySelectorAll('img[data-img]').forEach(function(img){
+    var tries=[];
+    img.getAttribute('data-img').split('|').forEach(function(n){exts.forEach(function(e){tries.push(n+'.'+e);});});
+    var i=0;
+    function next(){
+      if(i>=tries.length){img.onerror=null;var f=img.closest('figure');if(f){f.classList.add('missing');}return;}
+      img.src=tries[i++];
+    }
+    img.onerror=next;
+    next();
+  });
+
+  /* Menu: destaca a seção atual e mostra o progresso de leitura. */
+  var links=Array.prototype.slice.call(document.querySelectorAll('.top nav a'));
+  var map={};
+  links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a;});
+  var ids=Object.keys(map);
+  var last=null;
+  function onScroll(){
+    var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+    var bar=document.getElementById('bar');
+    if(bar){bar.style.width=(max>0?Math.min(100,h.scrollTop/max*100):0)+'%';}
+    var cur=null;
+    ids.forEach(function(id){var el=document.getElementById(id);if(el&&el.getBoundingClientRect().top<=140){cur=id;}});
+    if(cur===last){return;}
+    last=cur;
+    links.forEach(function(a){a.classList.remove('on');a.removeAttribute('aria-current');});
+    if(cur){
+      var a=map[cur];a.classList.add('on');a.setAttribute('aria-current','true');
+      var nav=a.parentNode;nav.scrollLeft=a.offsetLeft-nav.clientWidth/2+a.clientWidth/2;
+    }
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  window.addEventListener('resize',onScroll);
+  onScroll();
+})();
+</script>
+</body>
+</html>
